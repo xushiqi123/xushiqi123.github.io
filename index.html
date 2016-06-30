@@ -1,16 +1,250 @@
-<!doctype html>
-<html lang="en">
- <head>
-  <meta charset="UTF-8">
-  
-  <title>Document</title>
-	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link href="css/bootstrap.min.css" rel="stylesheet">
-	 <link rel="stylesheet" href="css/x.css">
- </head>
- <body >
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/introMyself.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <meta name="Keywords" content="徐世奇，前端工程师"/>
+    <meta name="Description" content="徐世奇的前端主页"/>
+    <style>
 
- <a href="X1/index.html">wwwww</a>
- </body>
+    </style>
+</head>
+<body style="width:100%;">
+<!--左侧导航条-->
+    <nav >
+        <h1 class="iconfont"><a href="#sec0">&#xe698;</a></h1>
+        <ul>
+            <li><a href="#sec1"><span class="iconfont">&#xe6c6;</span>
+                <div>
+                    <h3>Mission</h3>
+                    <p>Know what I'm up to</p>
+                </div>
+
+            </a>
+                <h5>My mission is clear <p></p></h5>
+            </li>
+            <li><a href="#sec2"><span class="iconfont">&#xe69d;</span>
+                <div>
+                    <h3>Play</h3>
+                    <p>See what I like to do</p>
+                </div>
+
+            </a>
+                <h5>This is my playground <p></p></h5>
+            </li>
+
+            <li><a href="#sec3"><span class="iconfont">&#xe68c;</span>
+                <div>
+                    <h3>Touch</h3>
+                    <p>How to get in touch</p>
+                </div>
+
+            </a>
+                <h5>Let do something together<p></p></h5>
+            </li>
+        </ul>
+    </nav>
+<!--右侧主体-->
+    <!-- 主页面-->
+    <section class="sec0 active" id="sec0">
+        <ul class="row">
+            <li class="col-xs-12 col-md-3">
+                <h2 class="iconfont">&#xe6c6;</h2>
+                <!--<a href="#sec1">Mission <span class="iconfont">&#xe6ac;</span></a>-->
+                <a href="#sec1"><span>MISSION </span><span class="iconfont">&#xe607;</span>
+                    <h6 class="line1"></h6>
+                    <h6 class="line2"></h6>
+                    <h6 class="line3"></h6>
+                    <h6 class="line4"></h6>
+                </a>
+            </li>
+            <li class="col-xs-12 col-md-3">
+                <h2 class="iconfont">&#xe69d;</h2>
+                <a href="#sec2"><span>PLAY </span><span class="iconfont">&#xe607;</span>
+                    <h6 class="line1"></h6>
+                    <h6 class="line2"></h6>
+                    <h6 class="line3"></h6>
+                    <h6 class="line4"></h6>
+                </a>
+            </li>
+            <li class="col-xs-12 col-md-3">
+                <h2 class="iconfont">&#xe68c;</h2>
+                <a href="#sec3"><span>TOUCH </span><span class="iconfont">&#xe607;</span>
+                    <h6 class="line1"></h6>
+                    <h6 class="line2"></h6>
+                    <h6 class="line3"></h6>
+                    <h6 class="line4"></h6>
+                </a>
+            </li>
+        </ul>
+        <div>
+              <h3>Imagine, create, enjoy.</h3>
+              <h4>Let me show you how.</h4>
+            <h5>Let do something together<p></p></h5>
+        </div>
+    </section>
+    <div style="padding:5em 8em;
+    position: absolute;
+    height: 100%;
+    left: 300px;
+    right: 0;
+    z-index: 10;
+    background-color: #fff"></div>
+    <!-- mission页面-->
+    <section class="sec1" id="sec1">
+        <h1>My mission is clear</h1>
+        <p>KNOW WHAT I'M UP TO</p>
+        <span></span>
+        <ul class="row">
+            <!-- 第一个框-Design-->
+            <li class="col-xs-12 col-md-5">
+                <div class="iconfont">&#xe6c1;</div>
+                <div>
+                    <h2>DESIGN</h2>
+                    <span>The first impression is also the most important one. That's why it's important for the design to be                                  aesthetical, innovative, modern and yet simple enough for the user.
+                    </span>
+                </div>
+            </li>
+            <!-- 第二个框-DEVELOPMENT-->
+            <li class="col-xs-12 col-md-5">
+                <div class="iconfont">&#xe691;</div>
+                <div>
+                    <h2>DEVELOPMENT</h2>
+                    <span>It's not just the visuals details that make an impact. Functionality is a key perception in user experience                        and so is a seamless workflow.
+                    </span>
+                </div>
+            </li>
+            <!-- 第三个框-CMS-->
+            <li class="col-xs-12 col-md-5">
+                <div class="iconfont">&#xe65a;</div>
+                <div>
+                    <h2>CMS</h2>
+                    <span>
+                        My websites are build on Drupal, which is a powerfull open source platform with a large community supporting                        it. It can handle multilingual, ecommerce or a simple portfolio site with ease.
+                    </span>
+                </div>
+            </li>
+            <!-- 第四个框-CREATE-->
+            <li class="col-xs-12 col-md-5">
+                <div class="iconfont">&#xe92c;</div>
+                <div>
+                    <h2>CREATE</h2>
+                    <span>
+                        With all that in mind I think, design and develop for the user, with collaboration with the client. To                              create a product that you can only describe with amazing. With repetition.
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- play页面-->
+    <section class="sec2" id="sec2">
+        <div>
+            <h1>This is my hobby</h1>
+            <p>SEE WHAT I LIKE TO DO</p>
+            <span></span>
+            <ul class="row">
+                <li class="col-xs-12 col-md-offset-2 col-md-4"><a href=".hobby1">Photography</a>
+                </li>
+                <li class="col-xs-12 col-md-4"><a href=".hobby2">Cycling</a>
+                </li>
+            </ul>
+
+            <!-- 跳转页-->
+            <div class="hobby hobby1">
+                <h5 class="btn1 iconfont">&#xf0069; Back</h5>
+                <h1>This is my hobby</h1>
+                <p>SEE WHAT I LIKE TO DO</p>
+                <span></span>
+
+                <!-- 自制轮播-->
+                <div id="carousel1">
+                    <h6 class="iconfont">&#xe779;</h6>
+                    <img src="img/a1.JPG" alt="1"/>
+                    <h6 class="iconfont">&#xe775;</h6>
+                </div>
+
+            </div>
+            <div class="hobby hobby2">
+                <h5 class="btn1 iconfont">&#xf0069; Back</h5>
+                <h1>This is my hobby</h1>
+                <p>SEE WHAT I LIKE TO DO</p>
+                <span></span>
+
+                <!-- bootstrap轮播-->
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="width:760px;margin-left:15%;">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <!--<img src="img/b1.jpg" alt="...">-->
+                        <!--</div>-->
+                        <!--<div class="item">-->
+                            <img src="img/b2.jpg" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="img/b3.jpg" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="img/b4.jpg" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="img/b5.jpg" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="img/b6.jpg" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="img/b7.jpg" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="img/b8.jpg" alt="...">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="sec3" id="sec3">
+        <h1>Lets do something together</h1>
+        <p>There are my self-introduction</p>
+        <span></span>
+        <ul>
+            <li>姓 名：徐世奇</li>
+            <li>年 龄：25</li>
+            <li>学 历：本科</li>
+            <li>专 业：光电子技术科学</li>
+            <li>电 话：018268208660</li>
+            <li>邮 箱：aa89797771@126.com</li>
+        </ul>
+    </section>
+<script src='js/jquery-1.11.3.min.js'></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/index.js"></script>
+</body>
 </html>
