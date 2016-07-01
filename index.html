@@ -1,250 +1,556 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/introMyself.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <meta name="Keywords" content="徐世奇，前端工程师"/>
-    <meta name="Description" content="徐世奇的前端主页"/>
-    <style>
 
-    </style>
-</head>
-<body style="width:100%;">
-<!--左侧导航条-->
-    <nav >
-        <h1 class="iconfont"><a href="#sec0">&#xe698;</a></h1>
-        <ul>
-            <li><a href="#sec1"><span class="iconfont">&#xe6c6;</span>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/introMyself.css" rel="stylesheet">
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="css/pic-action.css" rel="stylesheet">
+		<link href="css/aos.css" rel="stylesheet">
+		<meta name="Keywords" content="徐世奇，前端工程师" />
+		<meta name="Description" content="徐世奇的前端主页" />
+	</head>
+
+	<body style="width:100%;">
+		<!--左侧导航条-->
+		<nav>
+			<h1 class="iconfont"><a href="#sec0">&#xe698;</a></h1>
+			<ul>
+				<li><a href="#sec1"><span class="iconfont">&#xe6c6;</span>
                 <div>
                     <h3>Mission</h3>
                     <p>Know what I'm up to</p>
                 </div>
 
             </a>
-                <h5>My mission is clear <p></p></h5>
-            </li>
-            <li><a href="#sec2"><span class="iconfont">&#xe69d;</span>
+					<h5>My mission is clear <p></p></h5>
+				</li>
+				<li><a href="#sec2"><span class="iconfont">&#xe69d;</span>
                 <div>
                     <h3>Play</h3>
                     <p>See what I like to do</p>
                 </div>
 
             </a>
-                <h5>This is my playground <p></p></h5>
-            </li>
+					<h5>This is my playground <p></p></h5>
+				</li>
 
-            <li><a href="#sec3"><span class="iconfont">&#xe68c;</span>
+				<li><a href="#sec3"><span class="iconfont">&#xe68c;</span>
                 <div>
                     <h3>Touch</h3>
                     <p>How to get in touch</p>
                 </div>
 
             </a>
-                <h5>Let do something together<p></p></h5>
-            </li>
-        </ul>
-    </nav>
-<!--右侧主体-->
-    <!-- 主页面-->
-    <section class="sec0 active" id="sec0">
-        <ul class="row">
-            <li class="col-xs-12 col-md-3">
-                <h2 class="iconfont">&#xe6c6;</h2>
-                <!--<a href="#sec1">Mission <span class="iconfont">&#xe6ac;</span></a>-->
-                <a href="#sec1"><span>MISSION </span><span class="iconfont">&#xe607;</span>
+					<h5>Let do something together<p></p></h5>
+				</li>
+			</ul>
+		</nav>
+		<!--右侧主体-->
+		<!-- 主页面-->
+
+		<section class="sec0 active" id="sec0">
+			<ul class="row">
+				<li class="col-xs-12 col-md-3">
+					<h2 class="iconfont">&#xe6c6;</h2>
+					<!--<a href="#sec1">Mission <span class="iconfont">&#xe6ac;</span></a>-->
+					<a href="#sec1"><span>MISSION </span><span class="iconfont">&#xe607;</span>
                     <h6 class="line1"></h6>
                     <h6 class="line2"></h6>
                     <h6 class="line3"></h6>
                     <h6 class="line4"></h6>
                 </a>
-            </li>
-            <li class="col-xs-12 col-md-3">
-                <h2 class="iconfont">&#xe69d;</h2>
-                <a href="#sec2"><span>PLAY </span><span class="iconfont">&#xe607;</span>
+				</li>
+				<li class="col-xs-12 col-md-3">
+					<h2 class="iconfont">&#xe69d;</h2>
+					<a href="#sec2"><span>PLAY </span><span class="iconfont">&#xe607;</span>
                     <h6 class="line1"></h6>
                     <h6 class="line2"></h6>
                     <h6 class="line3"></h6>
                     <h6 class="line4"></h6>
                 </a>
-            </li>
-            <li class="col-xs-12 col-md-3">
-                <h2 class="iconfont">&#xe68c;</h2>
-                <a href="#sec3"><span>TOUCH </span><span class="iconfont">&#xe607;</span>
+				</li>
+				<li class="col-xs-12 col-md-3">
+					<h2 class="iconfont">&#xe68c;</h2>
+					<a href="#sec3"><span>TOUCH </span><span class="iconfont">&#xe607;</span>
                     <h6 class="line1"></h6>
                     <h6 class="line2"></h6>
                     <h6 class="line3"></h6>
                     <h6 class="line4"></h6>
                 </a>
-            </li>
-        </ul>
-        <div>
-              <h3>Imagine, create, enjoy.</h3>
-              <h4>Let me show you how.</h4>
-            <h5>Let do something together<p></p></h5>
-        </div>
-    </section>
-    <div style="padding:5em 8em;
-    position: absolute;
-    height: 100%;
-    left: 300px;
-    right: 0;
-    z-index: 10;
-    background-color: #fff"></div>
-    <!-- mission页面-->
-    <section class="sec1" id="sec1">
-        <h1>My mission is clear</h1>
-        <p>KNOW WHAT I'M UP TO</p>
-        <span></span>
-        <ul class="row">
-            <!-- 第一个框-Design-->
-            <li class="col-xs-12 col-md-5">
-                <div class="iconfont">&#xe6c1;</div>
-                <div>
-                    <h2>DESIGN</h2>
-                    <span>The first impression is also the most important one. That's why it's important for the design to be                                  aesthetical, innovative, modern and yet simple enough for the user.
+				</li>
+			</ul>
+			<div>
+				<h3>Imagine, create, enjoy.</h3>
+				<h4>Let me show you how.</h4>
+				<h5>Let do something together<p></p></h5>
+			</div>
+		</section>
+
+		<!-- mission页面-->
+
+		<section class="sec1" id="sec1">
+			<h1>My mission is clear</h1>
+			<p>KNOW WHAT I'M UP TO</p>
+			<span></span>
+			<ul class="row">
+				<!-- 第一个框-Design-->
+				<li class="col-xs-12 col-md-5">
+					<div class="iconfont">&#xe6c1;</div>
+					<div>
+						<h2>DESIGN</h2>
+						<span>The first impression is also the most important one. That's why it's important for the design to be                                  aesthetical, innovative, modern and yet simple enough for the user.
                     </span>
-                </div>
-            </li>
-            <!-- 第二个框-DEVELOPMENT-->
-            <li class="col-xs-12 col-md-5">
-                <div class="iconfont">&#xe691;</div>
-                <div>
-                    <h2>DEVELOPMENT</h2>
-                    <span>It's not just the visuals details that make an impact. Functionality is a key perception in user experience                        and so is a seamless workflow.
+					</div>
+				</li>
+				<!-- 第二个框-DEVELOPMENT-->
+				<li class="col-xs-12 col-md-5">
+					<div class="iconfont">&#xe691;</div>
+					<div>
+						<h2>DEVELOPMENT</h2>
+						<span>It's not just the visuals details that make an impact. Functionality is a key perception in user experience                        and so is a seamless workflow.
                     </span>
-                </div>
-            </li>
-            <!-- 第三个框-CMS-->
-            <li class="col-xs-12 col-md-5">
-                <div class="iconfont">&#xe65a;</div>
-                <div>
-                    <h2>CMS</h2>
-                    <span>
+					</div>
+				</li>
+				<!-- 第三个框-CMS-->
+				<li class="col-xs-12 col-md-5">
+					<div class="iconfont">&#xe65a;</div>
+					<div>
+						<h2>CMS</h2>
+						<span>
                         My websites are build on Drupal, which is a powerfull open source platform with a large community supporting                        it. It can handle multilingual, ecommerce or a simple portfolio site with ease.
                     </span>
-                </div>
-            </li>
-            <!-- 第四个框-CREATE-->
-            <li class="col-xs-12 col-md-5">
-                <div class="iconfont">&#xe92c;</div>
-                <div>
-                    <h2>CREATE</h2>
-                    <span>
+					</div>
+				</li>
+				<!-- 第四个框-CREATE-->
+				<li class="col-xs-12 col-md-5">
+					<div class="iconfont">&#xe92c;</div>
+					<div>
+						<h2>CREATE</h2>
+						<span>
                         With all that in mind I think, design and develop for the user, with collaboration with the client. To                              create a product that you can only describe with amazing. With repetition.
                     </span>
-                </div>
-            </li>
-        </ul>
-    </section>
-    <!-- play页面-->
-    <section class="sec2" id="sec2">
-        <div>
-            <h1>This is my hobby</h1>
-            <p>SEE WHAT I LIKE TO DO</p>
-            <span></span>
-            <ul class="row">
-                <li class="col-xs-12 col-md-offset-2 col-md-4"><a href=".hobby1">Photography</a>
-                </li>
-                <li class="col-xs-12 col-md-4"><a href=".hobby2">Cycling</a>
-                </li>
-            </ul>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<!-- play页面-->
 
-            <!-- 跳转页-->
-            <div class="hobby hobby1">
-                <h5 class="btn1 iconfont">&#xf0069; Back</h5>
-                <h1>This is my hobby</h1>
-                <p>SEE WHAT I LIKE TO DO</p>
-                <span></span>
+		<section class="sec2" id="sec2">
+			<div class="sec2-bg">
 
-                <!-- 自制轮播-->
-                <div id="carousel1">
-                    <h6 class="iconfont">&#xe779;</h6>
-                    <img src="img/a1.JPG" alt="1"/>
-                    <h6 class="iconfont">&#xe775;</h6>
-                </div>
+				<div class="sec2-mask">
+					<div class="sec2-header-txt">
+						<h1 class="txt-header">This is my hobby</h1>
+						<p class="txt-body">
+							Left the photographer's understanding of the nature of life in society. In addition, in daily life, photography makes people a way to relax.
+							<br/><br/>into nature close to the beauty, feel the beauty, can exercise the body, make many like-minded friends.
+						</p>
+					</div>
+					<div class="sec2-header-pic-out">
+						<a class="sec2-header-pic sec2-header-pic1" href="#aosDonghua1"></a>
+						<a class="sec2-header-pic sec2-header-pic2" href="#aosDonghua2"></a>
+					</div>
+				</div>
 
-            </div>
-            <div class="hobby hobby2">
-                <h5 class="btn1 iconfont">&#xf0069; Back</h5>
-                <h1>This is my hobby</h1>
-                <p>SEE WHAT I LIKE TO DO</p>
-                <span></span>
+				<div class="aos-donghua1" id="aosDonghua1">
 
-                <!-- bootstrap轮播-->
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="width:760px;margin-left:15%;">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-                    </ol>
+					<div class="aos-border aos-border-left" aos="fade-right" aos-easing="ease-in-sine" aos-during="1400">
+						<div class="grid">
+							<figure class="effect-milo">
+								<img src="img/a1.jpg" alt="" />
+								<figcaption>
+									<h2>sheyin<span>Milo</span></h2>
+									<p>摄于2014年<br/> 湖州</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="aos-border aos-border-right" aos="fade-left" aos-easing="ease-in-sine" aos-during="1400">
+						<div class="grid">
+							<figure class="effect-milo">
+								<img src="img/a2.jpg" alt="" />
+								<figcaption>
+									<h2>Faithful <span>Milo</span></h2>
+									<p>摄于2013年<br/> 黄山</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="aos-border aos-border-left" aos="fade-down-right" aos-easing="ease-in-sine" aos-during="1400">
+						<div class="grid">
+							<figure class="effect-milo">
+								<img src="img/a3.jpg" alt="" />
+								<figcaption>
+									<h2>Faithful <span>Milo</span></h2>
+									<p>摄于2014年<br/> 厦门</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="aos-border aos-border-right" aos="fade-down-left" aos-easing="ease-in-sine" aos-during="1400">
+						<div class="grid">
+							<figure class="effect-milo">
+								<img src="img/a4.jpg" alt="" />
+								<figcaption>
+									<h2>Faithful <span>Milo</span></h2>
+									<p>摄于2013年<br/> 厦门</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="aos-border aos-border-left" aos="slide-right" aos-easing="ease-in-sine" aos-during="1400">
+						<div class="grid">
+							<figure class="effect-milo">
+								<img src="img/a5.jpg" alt="" />
+								<figcaption>
+									<h2>Faithful <span>Milo</span></h2>
+									<p>摄于2013年<br/> 苏州</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="aos-border aos-border-right" aos="slide-left" aos-easing="ease-in-sine" aos-during="1400">
+						<div class="grid">
+							<figure class="effect-milo">
+								<img src="img/a6.jpg" alt="" />
+								<figcaption>
+									<h2>Faithful <span>Milo</span></h2>
+									<p>摄于2013年<br/> 苏州</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="aos-border aos-border-left" aos="slide-right" aos-easing="ease-in-sine" aos-during="1400">
+						<div class="grid">
+							<figure class="effect-milo">
+								<img src="img/a7.jpg" alt="" />
+								<figcaption>
+									<h2>Faithful <span>Milo</span></h2>
+									<p>摄于2013年<br/> 厦门</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="aos-border aos-border-right" aos="slide-left" aos-easing="ease-in-sine" aos-during="1400">
+						<div class="grid">
+							<figure class="effect-milo">
+								<img src="img/a8.jpg" alt="" />
+								<figcaption>
+									<h2>Faithful <span>Milo</span></h2>
+									<p>摄于2014年<br/> 乌镇</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<br/>
 
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <!--<img src="img/b1.jpg" alt="...">-->
-                        <!--</div>-->
-                        <!--<div class="item">-->
-                            <img src="img/b2.jpg" alt="...">
-                        </div>
-                        <div class="item">
-                            <img src="img/b3.jpg" alt="...">
-                        </div>
-                        <div class="item">
-                            <img src="img/b4.jpg" alt="...">
-                        </div>
-                        <div class="item">
-                            <img src="img/b5.jpg" alt="...">
-                        </div>
-                        <div class="item">
-                            <img src="img/b6.jpg" alt="...">
-                        </div>
-                        <div class="item">
-                            <img src="img/b7.jpg" alt="...">
-                        </div>
-                        <div class="item">
-                            <img src="img/b8.jpg" alt="...">
-                        </div>
-                    </div>
+				<div class="sec2-camera-footer">
+					<h1 class='camera-footer-header'>The benefits of taking photos</h1>
+					<span>Photography to meet our expectations of life and the future of longing for, let us cherish all the beautiful things around. Through photography, we left too many memorable moments, record every piece of life.</span>
+				</div>
 
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
+				<div class="aos-donghua2" id="aosDonghua2">
+					<div class="aos-border aos-border-left" aos="fade-right" aos-easing="ease-in-sine" aos-during="1400">
+						<div class="grid">
+							<figure class="effect-jazz">
+								<img src="img/b1.jpg" alt="" />
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>2010年<br/>温州</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="aos-border aos-border-right" aos="fade-left" aos-easing="ease-in-sine" aos-during="1400">
+						<div class="grid">
+							<figure class="effect-jazz">
+								<img src="img/b2.jpg" alt="" />
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>2012年<br/>杭州</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="aos-border aos-border-left" aos="fade-down-right" aos-easing="ease-in-sine" aos-during="1400">
+						<div class="grid">
+							<figure class="effect-jazz">
+								<img src="img/b3.jpg" alt="" />
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>2012年<br/>湖州</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="aos-border aos-border-right" aos="fade-down-left" aos-easing="ease-in-sine" aos-during="1400">
+						<div class="grid">
+							<figure class="effect-jazz">
+								<img src="img/b4.JPG" alt="" />
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>2015年<br/>青海</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="aos-border aos-border-left" aos="slide-right" aos-easing="ease-in-sine" aos-during="1400">
+						<div class="grid">
+							<figure class="effect-jazz">
+								<img src="img/b5.JPG" alt="" />
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>2015年<br/>青海</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="aos-border aos-border-right" aos="slide-left" aos-easing="ease-in-sine" aos-during="1400">
+						<div class="grid">
+							<figure class="effect-jazz">
+								<img src="img/b6.JPG" alt="" />
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>2015年<br/>青海</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="aos-border aos-border-left" aos="slide-right" aos-easing="ease-in-sine" aos-during="1400">
+						<div class="grid">
+							<figure class="effect-jazz">
+								<img src="img/b7.JPG" alt="" />
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>2015年<br/>青海</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="aos-border aos-border-right" aos="slide-left" aos-easing="ease-in-sine" aos-during="1400">
+						<div class="grid">
+							<figure class="effect-jazz">
+								<img src="img/b8.jpg" alt="" />
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>2015年<br/>青海</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<div class="sec2-camera-footer">
+					<h1 class='camera-footer-header'>The benefits of taking photos</h1>
+					<span>Photography to meet our expectations of life and the future of longing for, let us cherish all the beautiful things around. Through photography, we left too many memorable moments, record every piece of life.</span>
+				</div>
 
-            </div>
-        </div>
+			</div>
 
-    </section>
-    <section class="sec3" id="sec3">
-        <h1>Lets do something together</h1>
-        <p>There are my self-introduction</p>
-        <span></span>
-        <ul>
-            <li>姓 名：徐世奇</li>
-            <li>年 龄：25</li>
-            <li>学 历：本科</li>
-            <li>专 业：光电子技术科学</li>
-            <li>电 话：018268208660</li>
-            <li>邮 箱：aa89797771@126.com</li>
-        </ul>
-    </section>
-<script src='js/jquery-1.11.3.min.js'></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/index.js"></script>
-</body>
+			<!--<div>原先的代码-->
+			<!--<h1>This is my hobby</h1>-->
+			<!--<p>SEE WHAT I LIKE TO DO</p>-->
+			<!--<span></span>-->
+			<!--<ul class="row">-->
+			<!--<li class="col-xs-12 col-md-offset-2 col-md-4"><a href=".hobby1">Photography</a>-->
+			<!--</li>-->
+			<!--<li class="col-xs-12 col-md-4"><a href=".hobby2">Cycling</a>-->
+			<!--</li>-->
+			<!--</ul>-->
+
+			<!--&lt;!&ndash; 跳转页&ndash;&gt;-->
+			<!--<div class="hobby hobby1">-->
+			<!--<h5 class="btn1 iconfont">&#xf0069; Back</h5>-->
+			<!--<h1>This is my hobby</h1>-->
+			<!--<p>SEE WHAT I LIKE TO DO</p>-->
+			<!--<span></span>-->
+
+			<!--&lt;!&ndash; 自制轮播&ndash;&gt;-->
+			<!--<div id="carousel1">-->
+			<!--<h6 class="iconfont">&#xe779;</h6>-->
+			<!--<img src="img/a1.JPG" alt="1"/>-->
+			<!--<h6 class="iconfont">&#xe775;</h6>-->
+			<!--</div>-->
+
+			<!--</div>-->
+			<!--<div class="hobby hobby2">-->
+			<!--<h5 class="btn1 iconfont">&#xf0069; Back</h5>-->
+			<!--<h1>This is my hobby</h1>-->
+			<!--<p>SEE WHAT I LIKE TO DO</p>-->
+			<!--<span></span>-->
+
+			<!--&lt;!&ndash; bootstrap轮播&ndash;&gt;-->
+			<!--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="width:760px;margin-left:15%;">-->
+			<!--&lt;!&ndash; Indicators &ndash;&gt;-->
+			<!--<ol class="carousel-indicators">-->
+			<!--<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>-->
+			<!--<li data-target="#carousel-example-generic" data-slide-to="1"></li>-->
+			<!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+			<!--<li data-target="#carousel-example-generic" data-slide-to="3"></li>-->
+			<!--<li data-target="#carousel-example-generic" data-slide-to="4"></li>-->
+			<!--<li data-target="#carousel-example-generic" data-slide-to="5"></li>-->
+			<!--<li data-target="#carousel-example-generic" data-slide-to="6"></li>-->
+			<!--</ol>-->
+
+			<!--&lt;!&ndash; Wrapper for slides &ndash;&gt;-->
+			<!--<div class="carousel-inner" role="listbox">-->
+			<!--<div class="item active">-->
+			<!--&lt;!&ndash;<img src="img/b1.jpg" alt="...">&ndash;&gt;-->
+			<!--&lt;!&ndash;</div>&ndash;&gt;-->
+			<!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+			<!--<img src="img/b2.jpg" alt="...">-->
+			<!--</div>-->
+			<!--<div class="item">-->
+			<!--<img src="img/b3.jpg" alt="...">-->
+			<!--</div>-->
+			<!--<div class="item">-->
+			<!--<img src="img/b4.jpg" alt="...">-->
+			<!--</div>-->
+			<!--<div class="item">-->
+			<!--<img src="img/b5.jpg" alt="...">-->
+			<!--</div>-->
+			<!--<div class="item">-->
+			<!--<img src="img/b6.jpg" alt="...">-->
+			<!--</div>-->
+			<!--<div class="item">-->
+			<!--<img src="img/b7.jpg" alt="...">-->
+			<!--</div>-->
+			<!--<div class="item">-->
+			<!--<img src="img/b8.jpg" alt="...">-->
+			<!--</div>-->
+			<!--</div>-->
+
+			<!--&lt;!&ndash; Controls &ndash;&gt;-->
+			<!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">-->
+			<!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+			<!--<span class="sr-only">Previous</span>-->
+			<!--</a>-->
+			<!--<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">-->
+			<!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+			<!--<span class="sr-only">Next</span>-->
+			<!--</a>-->
+			<!--</div>-->
+
+			<!--</div>-->
+			<!--</div>-->
+
+		</section>
+		<section class="sec3" id="sec3">
+			<h1>Lets do something together</h1>
+			<p>There are my self-introduction</p>
+			<span></span>
+
+			<div class="panel-group my-accordion" id="accordion" role="tablist" aria-multiselectable="true">
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingOne">
+						<h4 class="panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			         	基础信息
+			      </h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+						<div class="panel-body">
+							<ul class="accordion-body">
+								<li>姓 名：徐世奇</li>
+								<li>年 龄：25</li>
+								<li>学 历：本科</li>
+								<li>专 业：光电子技术科学</li>
+								<li>电 话：018268208660</li>
+								<li>邮 箱：aa89797771@126.com</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingTwo">
+						<h4 class="panel-title">
+			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			          Collapsible Group Item #2
+			        </a>
+			      </h4>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						<div class="panel-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+							on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+							raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingThree">
+						<h4 class="panel-title">
+			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			          Collapsible Group Item #3
+			        </a>
+			      </h4>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+						<div class="panel-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+							on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+							raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="my-accordion">
+				<h5 class="accordion-header">基础信息</h5>
+				<ul class="accordion-body">
+					<li>姓 名：徐世奇</li>
+					<li>年 龄：25</li>
+					<li>学 历：本科</li>
+					<li>专 业：光电子技术科学</li>
+					<li>电 话：018268208660</li>
+					<li>邮 箱：aa89797771@126.com</li>
+				</ul>
+
+				<h5 class="accordion-header">技能证书</h5>
+				<ul class="accordion-body">
+					<li>CET4</li>
+					<li>计算机等级考试C语言2级</li>
+				</ul>
+
+				<h5 class="accordion-header">荣誉奖励</h5>
+				<ul class="accordion-body">
+					<li>田径运动会学生男子5000米第五名</li>
+					<li>获得浙江省大学生物理创新竞赛二等奖</li>
+					<li>浙江省‘春泥计划’乐清市暑期支教活动 优秀志愿者</li>
+				</ul>
+
+				<h5 class="accordion-header">自我评价</h5>
+				<ul class="accordion-body">
+					<li>文静，做事认真、仔细，有较强的抗压能力。</li>
+					<li>多次参与志愿者活动，性格随和,有较高的亲和力。</li>
+					<li>曾在证券公司实习过一段时间，对新生事物接受能力比较强。</li>
+				</ul>
+
+			</div>
+		</section>
+		<script src='//cdn.bootcss.com/jquery/1.11.3/jquery.min.js'></script>
+		<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="js/aos.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+
 </html>
