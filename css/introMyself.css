@@ -297,6 +297,12 @@ body #sec0 > div h5 p {
 #sec1 > ul > li > div:last-child > span {
   color: #A8A8A8;
 }
+#sec1 div.row {
+  margin-top: 4.6em;
+}
+#sec1 div.row .canvas {
+  margin-right: 2em;
+}
 #sec2 .sec2-bg {
   background: url('../img/sec2-camera-bg.jpg') no-repeat;
   background-size: 1600px 680px;
