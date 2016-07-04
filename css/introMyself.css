@@ -73,7 +73,7 @@ body nav > ul li {
 }
 body nav > ul li h5 {
   position: absolute;
-  top: 0;
+  top: -5em;
   left: 60px;
   padding: 12px;
   border-radius: 4px;
@@ -123,6 +123,15 @@ body nav > ul li div p {
 body nav > ul li div p {
   color: #80806B;
 }
+body nav > ul li.active a {
+  background-color: #2ECC71;
+}
+body nav > ul li.active a span {
+  transform: rotate(360deg);
+}
+body nav > ul li.active a p {
+  color: #fff;
+}
 body section {
   padding: 5em 8em;
   position: absolute;
@@ -146,19 +155,13 @@ body #sec0 {
   background-size: cover;
 }
 body #sec0 > ul {
-  width: 65%;
+  width: 80%;
   margin: 240px auto 0;
-}
-body #sec0 > ul > li {
-  margin-right: 3em;
 }
 body #sec0 > ul > li > h2.iconfont {
   font-size: 10em;
   color: #fff;
-  transition: all 0.2s linear;
-}
-body #sec0 > ul > li > h2.iconfont:hover {
-  transform: rotate(360deg);
+  cursor: default;
 }
 body #sec0 > ul > li a {
   display: block;
@@ -191,7 +194,7 @@ body #sec0 > ul > li a h6.line2 {
 }
 body #sec0 > ul > li a h6.line3 {
   width: 150px;
-  left: 200px;
+  left: 400px;
   top: -2px;
 }
 body #sec0 > ul > li a h6.line4 {
@@ -219,7 +222,7 @@ body #sec0 > ul > li a:hover h6.line4 {
 }
 body #sec0 > div {
   position: relative;
-  width: 65%;
+  width: 80%;
   margin: 0 auto;
 }
 body #sec0 > div:hover h5 {
@@ -228,15 +231,14 @@ body #sec0 > div:hover h5 {
 body #sec0 > div > h3 {
   font-size: 4em;
   color: #fff;
-  margin: 40px 0px 12px -120px;
+  margin: 40px 0px 12px 0px;
 }
 body #sec0 > div > h4 {
   color: #fff;
-  margin-left: -120px;
 }
 body #sec0 > div h5 {
   position: absolute;
-  left: 30%;
+  left: 45%;
   top: -3.2em;
   padding: 12px;
   color: #fff;
@@ -309,8 +311,8 @@ body #sec0 > div h5 p {
   padding-top: 10em;
 }
 #sec2 .sec2-bg .sec2-mask .sec2-header-txt {
-  margin-left: 15em;
-  width: 30em;
+  margin-left: 15%;
+  width: 35%;
   float: left;
 }
 #sec2 .sec2-bg .sec2-mask .sec2-header-txt .txt-header {
@@ -355,6 +357,14 @@ body #sec0 > div h5 p {
   background-attachment: fixed ;
   padding-top: 2em;
 }
+#sec2 .sec2-bg .aos-donghua1 .grid {
+  width: 410px;
+}
+#sec2 .sec2-bg .aos-donghua1 .grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 #sec2 .sec2-bg .aos-donghua1 .aos-border {
   width: 500px;
   margin-top: 2em;
@@ -384,7 +394,6 @@ body #sec0 > div h5 p {
   font-size: 1.4em;
   margin-top: -2em;
   padding: 2em 5em 2em;
-  margin-left: 5px;
 }
 #sec2 .sec2-bg .sec2-camera-footer .camera-footer-header {
   font-size: 2.4em;
@@ -398,6 +407,14 @@ body #sec0 > div h5 p {
   background: url('../img/cartton-elephant.jpg');
   background-attachment: fixed ;
   padding-top: 2em;
+}
+#sec2 .sec2-bg .aos-donghua2 .grid {
+  width: 410px;
+}
+#sec2 .sec2-bg .aos-donghua2 .grid:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 #sec2 .sec2-bg .aos-donghua2 .aos-border {
   width: 500px;
@@ -443,21 +460,82 @@ body #sec0 > div h5 p {
   border-top: 1px solid #5B5B5B;
   margin-bottom: 2em;
 }
-#sec3 > .my-accordion > .accordion-header {
-  line-height: 2em;
-  font-size: 2em;
+#sec3 #accordion .panel {
+  background-color: transparent;
+}
+#sec3 #accordion .panel .panel-heading {
   padding: 0 5px;
   background: rgba(30, 30, 30, 0.5);
 }
-#sec3 > .my-accordion > .accordion-body {
+#sec3 #accordion .panel .panel-heading:hover {
+  color: #BF7C3E;
+}
+#sec3 #accordion .panel .panel-heading .panel-title {
+  line-height: 2em;
+  font-size: 2em;
+}
+#sec3 #accordion .panel .panel-body {
   background: rgba(50, 50, 50, 0.5);
 }
-#sec3 > .my-accordion > .accordion-body li {
-  font-size: 2.4em;
+#sec3 #accordion .panel .panel-body .accordion-body li {
+  font-size: 2.6em;
   line-height: 1.8em;
   color: #33B96A;
   margin-left: 2em;
   text-align: left;
+}
+@media screen and (min-width: 1200px) {
+  #sec2 .sec2-bg .aos-border-right > .grid {
+    right: 8em;
+  }
+  #sec2 .sec2-bg .aos-donghua1 .grid {
+    width: 800px;
+  }
+  #sec2 .sec2-bg .aos-donghua1 .grid .effect-milo {
+    width: 800px;
+  }
+  #sec2 .sec2-bg .aos-donghua2 .grid {
+    width: 800px;
+  }
+  #sec2 .sec2-bg .aos-donghua2 .grid .effect-jazz {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 1010px) {
+  body nav {
+    width: 126px;
+  }
+  body nav > ul > li > h5 {
+    left: 0px;
+    white-space: nowrap;
+  }
+  body nav > ul > li > a > div {
+    display: none;
+  }
+  body section {
+    left: 126px;
+  }
+  body #sec2 .sec2-bg .sec2-mask .sec2-header-txt {
+    display: none;
+  }
+  body #sec2 .sec2-bg .sec2-mask .sec2-header-pic-out {
+    width: 100%;
+    height: 100%;
+  }
+  body #sec2 .sec2-bg .sec2-mask .sec2-header-pic-out .sec2-header-pic {
+    float: left;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 6px solid #ccc;
+    margin: 0px 32px 32px 32px;
+  }
+  body #sec2 .sec2-bg .sec2-mask .sec2-header-pic-out .sec2-header-pic:hover {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    margin: 0 -2px 16px 16px;
+  }
 }
 @keyframes slideIn {
   0% {

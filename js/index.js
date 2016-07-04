@@ -12,7 +12,7 @@ $('nav>h1>a').click(function(e){
 $('nav>ul>li>a').mouseover(function(){
     $(this).next().css('opacity','1')
         .css('top','-4em')
-        .css('display','block').css('zIndex',1000);
+        .css('display','block').css('zIndex',11000);
 })
 //����blur
 $('nav>ul>li>a').mouseout(function(){
@@ -24,12 +24,16 @@ $('nav>ul>li>a').mouseout(function(){
 $('nav>ul>li>a').click(function(e){
     e.preventDefault();
     var id = $(this).attr('href');
-    $(id).addClass('active').siblings('.active').removeClass('active')
+    $(this).parent().addClass('active').siblings('.active').removeClass('active');
+    $(id).addClass('active').siblings('.active').removeClass('active');
 })
 //sec0��������
 $('#sec0>ul>li>a').click(function(e){
     e.preventDefault();
     var id=$(this).attr('href');
+    console.log($(this).attr('class'))
+    var class1='.'+$(this).attr('class')+'act';
+    $(class1).addClass('active').siblings('.active').removeClass('active');
     $(id).addClass('active').siblings('.active').removeClass('active')
 })
 
@@ -40,5 +44,3 @@ AOS.init({
     duration: 1000
 });
 
-//
-$('.my-accordion').accordion();
