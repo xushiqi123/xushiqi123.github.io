@@ -1,0 +1,32 @@
+body .same-txt {
+  text-align: center;
+  padding-top: 8em;
+}
+body .same-txt h1 {
+  margin: 0 0 0.6em;
+}
+body .same-txt p:after {
+  content: '';
+  display: block;
+  margin: 1.2em auto 4em;
+  width: 6em;
+  height: 2px;
+  background-color: #00CCC1;
+}
+body .MacBook-group .MacBook-pic-outer .img-responsive {
+  margin: 0 auto;
+}
+body .MacBook-group .MacBook-footer-txt {
+  margin-top: 4em;
+  margin-bottom: 6em;
+  color: #8D8D8D;
+}
+body .eight-pic-group {
+  background-color: #F8F8F8;
+}
+body .eight-pic-group .eight-pic-group-title li {
+  text-align: center;
+}
+body .eight-pic-group .eight-pic li {
+  padding: 0;
+}
