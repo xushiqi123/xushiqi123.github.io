@@ -7,83 +7,67 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/project-bootstrap.css"/>
+    <!--<link rel=" shortcut icon " href="/favicon.ico" type="image/x-icon"/>-->
+    <link type="image/x-icon" rel="shortcut icon" href="nihao.ico" />
     <!--[if lt IE 9]-->
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
 </head>
 <body>
-    <div class="nav">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <div class="navbar-toggle ">112233</div>
-                    <a class="navbar-brand" href="#">Neomax</a>
-                </div>
 
-                <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown</a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Another action</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li>
-                    </ul>
 
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown</a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Another action</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li>
-                    </ul>
 
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown</a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Another action</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li>
-                    </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>112233</li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
-    </div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">logo</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 添加 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="create-project" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#projectAddModal"><a href="#">项目</a></li>
+                            <li class="create-mission"><a href="#">任务</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
 
     <div class="header-carousel">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -96,22 +80,40 @@
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="img/module-3.jpg" alt="...">
-                    <div class="carousel-caption">
-                        111
+                <div class="item active" style="background-image: url(img/bg-hai.jpg)">
+                    <div class="middle-outter">
+                        <!--<div class="middle-inner">-->
+                            <div class="header-carousel-cover middle-inner">
+                                <div class="header-carousel-cover-txt hailuo-right">
+                                    <h1>Discover <br/> True Power</h1>
+                                    <p>I am honored that my works can be seen by your company.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-caption">
+                            </div>
+                        <!--</div>-->
                     </div>
                 </div>
-                <div class="item">
-                    <img src="img/module-3.jpg" alt="...">
+
+                <div class="item" style="background-image: url(img/bg-footer.jpg)">
+                    <div class="header-carousel-cover test">
+                        <div class="header-carousel-cover-txt">
+                            <h1>Discover <br/> True Power</h1>
+                            <p>I am honored that my works can be seen by your company.</p>
+                        </div>
+                    </div>
                     <div class="carousel-caption">
-                        222
                     </div>
                 </div>
-                <div class="item">
-                    <img src="img/module-3.jpg" alt="...">
+
+                <div class="item" style="background-image: url(img/bg-book.jpg)">
+                    <div class="header-carousel-cover flexmiddle">
+                        <div class="header-carousel-cover-txt">
+                            <h1>Discover <br/> True Power</h1>
+                            <p>I am honored that my works can be seen by your company.</p>
+                        </div>
+                    </div>
                     <div class="carousel-caption">
-                        333
                     </div>
                 </div>
             </div>
@@ -126,69 +128,526 @@
         </div>
     </div>
 
-    <div class="MacBook-group row">
+    <div class="MacBook-group container">
         <div class="MacBook-header-txt same-txt">
-            <h1>OUR STORY</h1>
-            <p>We are branding & digital studio from London.</p>
+            <h1>我的大学</h1>
+            <p>I graduated from Huzhou Teachers College</p>
         </div>
-        <div class="MacBook-pic-outer">
-         <img src="img/mega-mockup.png" class="img-responsive" alt=""/>
+        <div class="MacBook-pic-outer ">
+         <!--<img src="img/mega-mockup.png" class="img-responsive" alt=""/>-->
+         <img src="img/huzhou-teachers.jpg" style="width:50%;" alt=""/>
         </div>
         <div class="MacBook-footer-txt  col-sm-6 col-sm-offset-3">
             <p>
-                Neque porro quisquam est qui cum dolorem ipsum quia a dolor sit amet consectetur mini adipisci velit sed quia non numquam eius modi tempora incidunt magnam aliquam quaerat voluptatem.
+                <!--&nbsp;&nbsp;&nbsp;&nbsp;"normal school" is not only responsible for the teaching training high level of mission,but also with the development of society, given the identification of a new comprehensive talent training base to expand the comprehensive university.-->
+                <!--<br/>&nbsp;&nbsp;&nbsp;&nbsp;In general,normal college is the most close to the nature of the education of the university.-->
+                湖州师范学院校训--明体达用：即经义与治事的有机结合。师于古而用于今，“明体达用”内涵的现代意义，即明德立志，学习做人；学以致用，学会做事。就现代意义来讲，师范学院不仅担负着培养高水平的师资使命，同时随着社会的发展，更被赋予了一种全新意义的综合性人才培养基地的标识。师院学子我自豪！
             </p>
         </div>
     </div>
 
     <div class="eight-pic-group">
         <div class="same-txt">
-            <h1>PORTFOLIO</h1>
-            <p>An eye for detail makes our works beautiful.</p>
+            <h1>我的家乡</h1>
+            <p>I come from Wenzhou. This is a beautiful place.</p>
         </div>
+
         <div class="row">
+
             <ul class="eight-pic-group-title list-inline col-sm-6 col-sm-offset-3">
-                <li class="active col-sm-2 col-sm-offset-1"><a href="">All</a></li>
-                <li class=" col-sm-2"><a href="">Brand</a></li>
-                <li class=" col-sm-2"><a href="">Design</a></li>
-                <li class=" col-sm-2"><a href="">Motion</a></li>
-                <li class=" col-sm-2"><a href="">Priting</a></li>
+                <li class="active col-sm-2 col-sm-offset-1">全部</li>
+                <li class=" col-sm-2">旅游</li>
+                <li class=" col-sm-2">小吃</li>
+                <li class=" col-sm-2">人文</li>
+                <li class=" col-sm-2">历史</li>
             </ul>
-
             <ul class="eight-pic list-inline">
-                <li class="col-xs-12 col-sm-6 col-md-3">
-                    <img src="img/2.jpg" alt="" class="img-responsive"/>
-                    <div class="eight-pic-cover">
-                        <h1>RESPONSIVE DESIGN</h1>
-                        <P>MOTION</P>
+                    <li class="col-xs-12 col-sm-6 col-md-3">
+                        <img src="img/moutain.jpg" alt="" class="img-responsive"/>
+                        <div class="eight-pic-cover">
+                            <div class="eight-pic-txt">
+                                <h1>温州旅游</h1>
+                                <P>雁荡山</P>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="col-xs-12 col-sm-6 col-md-3">
+                        <img src="img/river.jpg" alt="" class="img-responsive"/>
+                        <div class="eight-pic-cover">
+                            <div class="eight-pic-txt">
+                                <h1>温州旅游</h1>
+                                <P>楠溪江</P>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="col-xs-12 col-sm-6 col-md-3">
+                        <img src="img/pig-gao.jpg" alt="" class="img-responsive"/>
+                        <div class="eight-pic-cover">
+                            <div class="eight-pic-txt">
+                                <h1>温州小吃</h1>
+                                <P>猪油糕</P>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="col-xs-12 col-sm-6 col-md-3">
+                        <img src="img/light-gao.jpg" alt="" class="img-responsive"/>
+                        <div class="eight-pic-cover">
+                            <div class="eight-pic-txt">
+                                <h1>温州小吃</h1>
+                                <P>灯盏糕</P>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+        </div>
+    </div>
+
+    <div class="six-li-group container">
+        <ul class="six-ul list-inline row">
+            <li class="six-li col-xs-12 col-sm-4">
+                <div class="row">
+                    <div class="six-left-pic pull-left col-xs-12 col-sm-2 iconfont">&#xe6fb;</div>
+                    <div class="six-right-txt pull-left col-xs-12 col-sm-10">
+                        <h1>雁荡山</h1>
+                        <p>雁荡山，又名雁岩、雁山。因山顶有湖，芦苇茂密，结草为荡，南归
+                            秋雁多宿于此，故名雁荡。以山水奇秀闻名，素有“海上名山、寰中绝胜”之誉，史称中国“东南第一山”</p>
                     </div>
-                </li><li class="col-xs-12 col-sm-6 col-md-3">
-                    <img src="img/2.jpg" alt="" class="img-responsive"/>
+                </div>
+            </li>
 
-                </li><li class="col-xs-12 col-sm-6 col-md-3">
-                    <img src="img/2.jpg" alt="" class="img-responsive"/>
+            <li class="six-li col-xs-12 col-sm-4">
+                <div class="row">
+                    <div class="six-left-pic pull-left col-xs-12 col-sm-2 iconfont">&#xe6fb;</div>
+                    <div class="six-right-txt pull-left col-xs-12 col-sm-10">
+                        <h1>楠溪江</h1>
+                        <p>楠溪江源头及中上游两岸，有多姿多彩、千奇百怪的瀑布50多处，两岸有3万亩滩林。东与雁荡山毗邻，西接缙云仙都，北与仙居景区接壤。</p>
+                    </div>
+                </div>
+            </li>
 
-                </li><li class="col-xs-12 col-sm-6 col-md-3">
-                    <img src="img/2.jpg" alt="" class="img-responsive"/>
+            <li class="six-li col-xs-12 col-sm-4">
+                <div class="row">
+                    <div class="six-left-pic pull-left col-xs-12 col-sm-2 iconfont">&#xe6fb;</div>
+                    <div class="six-right-txt pull-left col-xs-12 col-sm-10">
+                        <h1>江心屿</h1>
+                        <p>江心屿位于温州市区北面瓯江中游，呈东西长、南北狭的形状，属于中国四大名屿。该屿风景秀丽，东西双塔凌空，映衬江心寺，历来被称为“瓯江蓬莱”。</p>
+                    </div>
+                </div>
+            </li>
 
+            <li class="six-li col-xs-12 col-sm-4">
+                <div class="row">
+                    <div class="six-left-pic pull-left col-xs-12 col-sm-2 iconfont">&#xe6fb;</div>
+                    <div class="six-right-txt pull-left col-xs-12 col-sm-10">
+                        <h1>猪油糕</h1>
+                        <p>猪油糕又名脂油糕，属闽式糕点。早在清代就已著名，《元和唯亭志》称其为“吴中佳制”。猪油糕是用猪油制成，洁白晶莹，葱香翠绿，糯软润湿，入口油而不腻。</p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="six-li col-xs-12 col-sm-4">
+                <div class="row">
+                    <div class="six-left-pic pull-left col-xs-12 col-sm-2 iconfont">&#xe6fb;</div>
+                    <div class="six-right-txt pull-left col-xs-12 col-sm-10">
+                        <h1>灯盏糕</h1>
+                        <p>灯盏糕是浙江温州的汉族特色名点，温州十大名小吃之一。属于油炸食品，历史悠久，最远可追溯至元末明初。</p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="six-li col-xs-12 col-sm-4">
+                <div class="row">
+                    <div class="six-left-pic pull-left col-xs-12 col-sm-2 iconfont">&#xe6fb;</div>
+                    <div class="six-right-txt pull-left col-xs-12 col-sm-10">
+                        <h1>鸭舌</h1>
+                        <p>温州鸭舌是一道浙江温州著名的汉族小吃，属于凉菜，鸭舌是卤的，风至半干，在口中细嚼，韧性十足，颇为耐嚼。</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="first-bg-group">
+        <div class="first-bg-cover">
+            <div class="first-bg-txt">
+                <h1>Add a little background to ease up!</h1>
+                <span href="" class="btn">o(^▽^)o</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="iphone-group">
+        <div class="iphone-header-txt same-txt">
+            <h1>My credentials</h1>
+            <p>There are my credentials.</p>
+        </div>
+
+        <div class="iphone-pic-out container">
+            <img src="img/zhengshu.jpg" class="img-responsive" alt=""/>
+        </div>
+
+        <ul class="iphone-footer-txt row list-inline">
+            <li class="iphone-footer-li col-xs-12 col-sm-offset-2 col-sm-4 ">
+                <span class="iconfont">&#xe655;</span>
+                <h1>CET4</h1>
+                <p>In high school , my english foundation is relatively weak, so at the beginning of the two tests I have failed, it is a bit worse. Later I almost every day to see the books in the bedroom , and finally I achieved satisfactory results. Now when I recall that it is also a full of memories</p>
+            </li>
+
+            <li class="iphone-footer-li col-xs-12 col-sm-4 ">
+                <span class="iconfont">&#xe655;</span>
+                <h1>C语言二级</h1>
+                <p>When i was in University I just contact C language . Everybody said of the logic of the subject is very strong, the exam is difficult , so many of people are want to test the office-level . but I choose the C-language,I reading the book in the library for two weeks, at last I was passed magical</p>
+            </li>
+
+            <!--<li class="iphone-footer-li col-xs-12 col-sm-4 ">-->
+                <!--<span class="iconfont">&#xe655;</span>-->
+                <!--<h1>Branding</h1>-->
+                <!--<p>Donec pede justo fringilla vel aliquet nec vulputate eget arcu. In enim justo rhoncus ut imperdiet a venenatis vitae justo.</p>-->
+            <!--</li>-->
+        </ul>
+
+    </div>
+
+    <div class="four-pic-group">
+        <div class="four-pic-header-txt same-txt">
+            <h1><b>我的爱好</b></h1>
+            <p>There are my hobbies</p>
+        </div>
+        <div class="container">
+            <ul class="four-pic-ul list-unstyled row">
+                <li class="four-pic-li col-xs-12 col-sm-6 col-md-3">
+                    <div class="four-pic-out">
+                        <img src="img/basketball.jpg" class="img-responsive" alt=""/>
+                        <div class="four-pic-cover"></div>
+                    </div>
+                    <div class="four-pic-footer-txt">
+                        <h1>Play basketball</h1>
+                        <p>My hobby</p>
+                    </div>
+                </li>
+
+                <li class="four-pic-li col-xs-12 col-sm-6 col-md-3">
+                    <div class="four-pic-out">
+                        <img src="img/run.jpg" class="img-responsive" alt=""/>
+                        <div class="four-pic-cover"></div>
+                    </div>
+                    <div class="four-pic-footer-txt">
+                        <h1>jogging</h1>
+                        <p>My hobby</p>
+                    </div>
+                </li>
+
+                <li class="four-pic-li col-xs-12 col-sm-6 col-md-3">
+                    <div class="four-pic-out">
+                        <img src="img/photo.jpg" class="img-responsive" alt=""/>
+                        <div class="four-pic-cover"></div>
+                    </div>
+                    <div class="four-pic-footer-txt">
+                        <h1>Take photos</h1>
+                        <p>My hobby</p>
+                    </div>
+                </li>
+
+                <li class="four-pic-li col-xs-12 col-sm-6 col-md-3">
+                    <div class="four-pic-out">
+                        <img src="img/byc.jpg" class="img-responsive" alt=""/>
+                        <div class="four-pic-cover"></div>
+                    </div>
+                    <div class="four-pic-footer-txt">
+                        <h1>Ride a bike</h1>
+                        <p>My hobby</p>
+                    </div>
+                </li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="second-bg-group" style="height:300px;">
+        <div class="second-bg-cover">
+            <div class="second-bg-txt">
+                <h1>Add a little background to ease up!</h1> <br/><br/>
+                <span href="" class="btn">o(^▽^)o</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="three-pic-group">
+        <div class="three-pic-header-txt same-txt">
+            <h1><b>我的其他作品</b></h1>
+            <p>There are my other work</p>
+        </div>
+
+        <div class="container">
+            <ul class="three-pic-ul list-unstyled row">
+                <li class="three-pic-li col-xs-12 col-sm-4 ">
+                    <div class="card">
+                        <img src="img/first-work.jpg" class="img-responsive" alt=""/>
+                        <div class="three-pic-txt">
+                            <h1>我的第一个作品</h1>
+                            <h2>&nbsp;&nbsp;My first work</h2>
+                            <!--<h2>June  2016 / BY <span>XUSHIQI</span></h2>-->
+                            <p> 布局和样式几乎全用原声代码写成，穿插了少量的Jquery和canvas绘图技术。<br/>
+                                因为是第一个自己个人制作完成的作品，所以局部有点粗糙，效果不太多。<br/>
+                                大体只是做了布局上的调整，对于动效方面有点少，不过整体上也是十分美观的。</p>
+                            <a href="">点击查看 ></a>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li class="three-pic-li col-xs-12 col-sm-4">
+                    <div class="card">
+                        <img src="img/4.jpg" class="img-responsive" alt=""/>
+                        <div class="three-pic-txt">
+                            <h1>我的第二个作品</h1>
+                            <h2>&nbsp;&nbsp;My second work</h2>
+                            <p>运用了矢量图标库，并用Jquery和手写代码实现了简单的动态效果。<br/>
+                                用4个页面在一个网页上进行点击切换，是页面的转换不需要跳转，切换更顺畅。增加了动效，使网页更加吸引眼球</p>
+                            <a href="">点击查看 ></a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="three-pic-li col-xs-12 col-sm-4">
+                    <div class="card">
+                        <img src="img/third-work.jpg" class="img-responsive" alt=""/>
+                        <div class="three-pic-txt">
+                            <h1>我的第三个作品(就是这个)</h1>
+                            <h2>&nbsp;&nbsp;My third work</h2>
+                            <p>整体布局运用了bootstrap框架，并下载了js插件，有了轮播和各种动态效果。<br/>
+                                有了之前的经验，这个做起来就有点感觉了。不仅有了整体上的把控，对于局部也更加注重,整体效果更加协调。<br/>
+                                </p>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
+
+        <div class="three-pic-footer-btn">
+            <a href="">谢谢观看</a>
+        </div>
+
+        <div class="container links">
+            <div class="links-outter clearfix">
+                <div class="link-brand pull-left"><img src="img/brand1.jpg" class="img-responsive" alt=""/></div>
+                <div class="link-brand pull-left"><img src="img/brand2.png" class="img-responsive" alt=""/></div>
+                <div class="link-brand pull-left"><img src="img/brand3.png" class="img-responsive" alt=""/></div>
+                <div class="link-brand pull-left"><img src="img/brand4.png" class="img-responsive" alt=""/></div>
+                <div class="link-brand pull-left"><img src="img/brand5.png" class="img-responsive" alt=""/></div>
+                <div class="link-brand pull-left"><img src="img/brand6.png" class="img-responsive" alt=""/></div>
+                <div class="link-brand pull-left"><img src="img/brand7.png" class="img-responsive" alt=""/></div>
+                <div class="link-brand pull-left"><img src="img/brand8.png" class="img-responsive" alt=""/></div>
+                <div class="link-brand pull-left"><img src="img/brand9.jpg" class="img-responsive" alt=""/></div>
+                <div class="link-brand pull-left"><img src="img/brand10.jpg" class="img-responsive" alt=""/></div>
+                <div class="link-brand pull-left"><img src="img/brand11.jpg" class="img-responsive" alt=""/></div>
+            </div>
+        </div>
     </div>
-    <div class="six-li-group"></div>
-    <div class="first-bg-group"></div>
-    <div class="iphone-group"></div>
-    <div class="four-pic-group"></div>
-    <div class="second-bg-group"></div>
-    <div class="three-pic-group"></div>
-    <div class="footer-carousel"></div>
-    <div class="footer"></div>
 
-
-
+    <!--<div class="footer-carousel" style="height:300px;"></div>-->
+    <!--<div class="footer"></div>-->
 
 <script src="js/jquery-1.11.3.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+    <script src="js/Headroom.js"></script>
+
+    <script>
+
+
+//导航条
+//页脚赞助商滚动
+        function linksInit(){
+            var current=0;
+            var length=$('.link-brand').length;
+            var duration=3000;
+            var direction=1;
+            var linksCount=6;
+            var linksWidth=$('.links').width();
+            var eachWidth=linksWidth/linksCount;
+            var timer;
+
+            $('.link-brand').each(function(){
+                $(this).css('width',eachWidth+'px');
+            })
+
+            function moveTo(num){
+                $('.links-outter').css('left',(-num*eachWidth)+'px');
+            }
+            function moveStart(){
+                timer=setInterval(function(){
+                    if( current<=0 ){
+                        direction=1;
+                    }
+                    else if( current >= ( length-linksCount) ){
+                        direction=-1;
+                    }
+                    current=current+direction;
+                    moveTo(current);
+                },duration);
+            }
+            moveStart();
+
+            $('.link-brand').hover(function(){
+                clearInterval(timer);
+            },function(){
+                moveStart()
+            })
+        }
+
+        window.onload=function(){
+            linksInit();
+        }
+
+
+
+        //图片滚动移入
+        function scrollFunction(class1,to1){
+            if(document.body.scrollTop>to1){
+                $('.'+class1).addClass('scrollTo');
+            }else{
+                $('.'+class1).removeClass('scrollTo');
+            }
+        }
+
+        $(window).on('scroll',function(){
+            scrollFunction('navbar-default',200);
+            scrollFunction('MacBook-pic-outer',300);
+            scrollFunction('eight-pic',1400);
+            scrollFunction('six-ul',1760);
+            scrollFunction('iphone-pic-out',2700);
+            scrollFunction('iphone-footer-txt',3100);
+            scrollFunction('four-pic-ul',3600);
+            scrollFunction('three-pic-ul',4800);
+            scrollFunction('three-pic-txt',5000);
+            scrollFunction('MacBook-header-txt',200);
+            scrollFunction('MacBook-footer-txt',800);
+            scrollFunction('eight-pic-group .same-txt',1200);
+            scrollFunction('eight-pic-group-title',1300);
+            scrollFunction('iphone-group .same-txt',2600);
+            scrollFunction('four-pic-header-txt',3400);
+            scrollFunction('three-pic-header-txt',4700);
+            scrollFunction('three-pic-footer-btn',5400);
+            scrollFunction('links',5800);
+        })
+//        $(window).on('scroll',function(event){
+//            if(document.body.scrollTop>200){
+//                $('.nav').addClass('active');
+//            }else{
+//                $('.nav').removeClass('active');
+//            }
+//        })
+//mac图
+//        $(window).on('scroll',function(){
+//            if(document.body.scrollTop>300){
+//                $('.MacBook-pic-outer').addClass('scrollTo')
+//            }else{
+//                $('.MacBook-pic-outer').removeClass('scrollTo')
+//            }
+//        })
+
+//        $(window).on('scroll',function(){
+//            console.log(document.body.scrollTop)
+//            if(document.body.scrollTop>1400){
+//                $('.eight-pic').addClass('scrollTo')
+//            }else{
+//                $('.eight-pic').removeClass('scrollTo')
+//            }
+//        })
+
+
+
+//  })
+
+
+
+
+//        function linksInit(){
+//            var length = $(".links .link-brand").length;
+//            var current = 0 ;
+//            var brandCount = 6;
+//            var duration = 1500;
+//            var $links = $(".links-outter");       //？？
+//
+//            var $brands = $(".link-brand");         //??
+//            var $linkEl = $(".links");
+//            var linkWidth = $linkEl.width();    //显示宽度
+//            var brandWith = linkWidth/brandCount;
+//            var timer ;
+//            var running = false;
+//
+//            $brands.each(function(){
+//                this.style.width = brandWith + "px";
+//            })
+//
+//            $links.width(brandWith * length + "px");
+//
+//            function linksMove(to){
+//                $links.css("left", (- to * brandWith )+ "px" );
+//            }
+//
+//            function linkStart(){
+//                if(!running){
+//                    timer = setInterval(function(){
+//                        linksMove(current+1);
+//                        current  = current +1;
+//                        if(current == length - brandCount) current=-1;
+//                    },duration);
+//                    running = true;
+//                }
+//            }
+//            linkStart();
+//
+//            $linkEl.hover(function(){
+//                clearInterval(timer)
+//                running = false;
+//            },function(){
+//                linkStart();
+//            })
+//
+//
+//        }
+//
+//        $(window).load(function(){
+//            linksInit();
+//
+//
+
+
+
+
+
+
+
+//
+//
+//        var nav = document.querySelector(".nav");
+//        console.log(nav)
+//        // construct an instance of Headroom, passing the element
+//        var headroom  = new Headroom(nav,{
+//            "offset": 205,
+//            "tolerance": 5,
+//            "classes": {
+//                "initial": "animated",
+//                "pinned": "bounceInDown",
+//                "unpinned": "bounceOutUp"
+//            }
+//        });
+//        // initialise
+//
+//        headroom.init();
+//
+
+
+//);
+//
+
+
+    </script>
 </body>
 </html>
