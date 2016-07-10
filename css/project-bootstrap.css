@@ -16,30 +16,45 @@
 .middle-flex {
   height: 100px;
   background-color: red;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 @font-face {
   font-family: 'iconfont';
   src: url('../iconfont/ux_1467212877_0407512/confont.eot');
+  src: url('../iconfont/ux_1467212877_0407512/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../iconfont/ux_1467212877_0407512/iconfont.woff') format('woff'), /* chrome??firefox */ url('../iconfont/ux_1467212877_0407512/iconfont.ttf') format('truetype'), /* chrome??firefox??opera??Safari, Android, iOS 4.2+*/ url('../iconfont/ux_1467212877_0407512/iconfont.svg#iconfont') format('svg')
+  
   /* IE9*/
-  src: url('../iconfont/ux_1467212877_0407512/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../iconfont/ux_1467212877_0407512/iconfont.woff') format('woff'), /* chrome??firefox */ url('../iconfont/ux_1467212877_0407512/iconfont.ttf') format('truetype'), /* chrome??firefox??opera??Safari, Android, iOS 4.2+*/ url('../iconfont/ux_1467212877_0407512/iconfont.svg#iconfont') format('svg');
   /* iOS 4.1- */
 }
-ul,
-ol,
-li,
-dl,
 dd,
-dt,
 div,
+dl,
+dt,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+li,
+ol,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -51,6 +66,10 @@ h6 {
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
+::-moz-selection {
+  background: #33CBBF;
+  color: #DEF0F0;
+}
 ::selection {
   background: #33CBBF;
   color: #DEF0F0;
@@ -59,38 +78,53 @@ h6 {
   background: #33CBBF;
   color: #DEF0F0;
 }
-html,
-body,
 .header-carousel,
 .header-carousel .carousel,
 .header-carousel .carousel-inner,
-.header-carousel .carousel-inner .item {
+.header-carousel .carousel-inner .item,
+body,
+html {
   height: 100%;
 }
 body .navbar-default {
+  border-bottom: none;
   margin-bottom: 0;
-  background-color: transparent;
-  transition: all 0.2s linear;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
 }
 body .navbar-default a {
-  color: #fff;
+  color: #ffffff;
 }
 body .navbar-default.scrollTo {
   padding-top: 15px;
   padding-bottom: 15px;
-  background: #A4CFF8;
+  background: rgba(0, 0, 0, 0.7);
 }
 body .navbar-default.scrollTo .navbar-collapse .navbar-form .form-control {
   background: #ffffff;
 }
-body .navbar-default.scrollTo .navbar-collapse .navbar-form button {
-  background: rgba(40, 40, 250, 0.4);
+body .navbar-default .navbar-brand {
+  padding: 9px 0;
+  height: auto;
+}
+body .navbar-default .navbar-brand img {
+  height: 40px;
+  display: inline-block;
 }
 body .navbar-default .navbar-header a {
-  color: #fff;
+  color: #ffffff;
 }
 body .navbar-default .navbar-collapse a {
-  color: #fff;
+  color: #ffffff;
+}
+body .navbar-default .navbar-collapse .navbar-nav img {
+  height: 30px;
+}
+body .navbar-default .navbar-collapse .navbar-nav > li:hover img {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 body .navbar-default .navbar-collapse .navbar-form .form-control {
   background: transparent;
@@ -110,7 +144,8 @@ body .header-carousel .carousel-inner .item .header-carousel-cover {
 }
 body .header-carousel .carousel-inner .item .header-carousel-cover .header-carousel-cover-txt {
   opacity: 0;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
   text-align: center;
   color: #fff;
 }
@@ -130,14 +165,32 @@ body .header-carousel .carousel-inner .item .header-carousel-cover .header-carou
   margin-right: 10%;
 }
 body .header-carousel .carousel-inner .item .header-carousel-cover.test {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 body .header-carousel .carousel-inner .item .header-carousel-cover.flexmiddle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 body .header-carousel .carousel-inner .item img {
   display: none;
@@ -163,7 +216,8 @@ body .same-txt p:after {
 }
 body .MacBook-group .MacBook-header-txt {
   opacity: 0;
-  transition: all 2.4s linear;
+  -webkit-transition: all 2.4s linear;
+          transition: all 2.4s linear;
 }
 body .MacBook-group .MacBook-header-txt.scrollTo {
   opacity: 1;
@@ -172,7 +226,8 @@ body .MacBook-group .MacBook-pic-outer {
   margin-top: 500px;
   text-align: center;
   opacity: 0;
-  transition: all 0.6s linear;
+  -webkit-transition: all 0.6s linear;
+          transition: all 0.6s linear;
 }
 body .MacBook-group .MacBook-pic-outer.scrollTo {
   margin-top: 0;
@@ -189,7 +244,8 @@ body .MacBook-group .MacBook-footer-txt {
   margin-bottom: 6em;
   color: #8D8D8D;
   opacity: 0;
-  transition: all 2.4s linear;
+  -webkit-transition: all 2.4s linear;
+          transition: all 2.4s linear;
 }
 body .MacBook-group .MacBook-footer-txt.scrollTo {
   opacity: 1;
@@ -199,7 +255,8 @@ body .eight-pic-group {
 }
 body .eight-pic-group .same-txt {
   opacity: 0;
-  transition: all 2.4s linear;
+  -webkit-transition: all 2.4s linear;
+          transition: all 2.4s linear;
 }
 body .eight-pic-group .same-txt.scrollTo {
   opacity: 1;
@@ -210,7 +267,8 @@ body .eight-pic-group .row {
 body .eight-pic-group .eight-pic-group-title {
   margin-bottom: 10px;
   opacity: 0;
-  transition: all 2.4s linear;
+  -webkit-transition: all 2.4s linear;
+          transition: all 2.4s linear;
 }
 body .eight-pic-group .eight-pic-group-title.scrollTo {
   opacity: 1;
@@ -222,7 +280,8 @@ body .eight-pic-group .eight-pic {
   margin-left: -5px;
   margin-top: 100px;
   opacity: 0;
-  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+          transition: all 0.4s linear;
 }
 body .eight-pic-group .eight-pic.scrollTo {
   margin-top: 0;
@@ -239,7 +298,8 @@ body .eight-pic-group .eight-pic li .eight-pic-cover {
   top: 0;
   right: 0;
   bottom: 0;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
   cursor: pointer;
   padding: 50% 0 0 10%;
 }
@@ -252,17 +312,21 @@ body .eight-pic-group .eight-pic li .eight-pic-cover .eight-pic-txt p {
 }
 body .eight-pic-group .eight-pic li img {
   width: 100%;
-  transition: transform 200ms ease-out;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+          transition: transform 200ms ease-out;
 }
 body .eight-pic-group .eight-pic li:hover .eight-pic-cover {
   background-color: rgba(76, 208, 198, 0.8);
 }
 body .eight-pic-group .eight-pic li:hover img {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 body .six-li-group .six-ul {
   opacity: 0;
-  transition: all 1.6s linear;
+  -webkit-transition: all 1.6s linear;
+          transition: all 1.6s linear;
   margin-top: 10em;
   margin-bottom: 10em;
 }
@@ -324,7 +388,8 @@ body .first-bg-group .first-bg-cover .first-bg-txt span {
 }
 body .iphone-group .same-txt {
   opacity: 0;
-  transition: all 2.4s linear;
+  -webkit-transition: all 2.4s linear;
+          transition: all 2.4s linear;
 }
 body .iphone-group .same-txt.scrollTo {
   opacity: 1;
@@ -332,7 +397,8 @@ body .iphone-group .same-txt.scrollTo {
 body .iphone-group .iphone-pic-out {
   margin-top: 500px;
   opacity: 0;
-  transition: all 0.6s linear;
+  -webkit-transition: all 0.6s linear;
+          transition: all 0.6s linear;
 }
 body .iphone-group .iphone-pic-out .img-responsive {
   margin: 0 auto 4em;
@@ -343,7 +409,8 @@ body .iphone-group .iphone-pic-out.scrollTo {
 }
 body .iphone-group .iphone-footer-txt {
   opacity: 0;
-  transition: all 2.4s linear;
+  -webkit-transition: all 2.4s linear;
+          transition: all 2.4s linear;
 }
 body .iphone-group .iphone-footer-txt.scrollTo {
   opacity: 1;
@@ -359,7 +426,7 @@ body .iphone-group .iphone-footer-txt .iphone-footer-li span {
 body .iphone-group .iphone-footer-txt .iphone-footer-li h1 {
   font-size: 1.4em;
   font-weight: bold;
-  margin: 0.6em 0 0.6em 0;
+  margin: 0.6em 0;
 }
 body .iphone-group .iphone-footer-txt .iphone-footer-li p {
   color: #808080;
@@ -370,14 +437,16 @@ body .four-pic-group {
 }
 body .four-pic-group .same-txt {
   opacity: 0;
-  transition: all 2.4s linear;
+  -webkit-transition: all 2.4s linear;
+          transition: all 2.4s linear;
 }
 body .four-pic-group .same-txt.scrollTo {
   opacity: 1;
 }
 body .four-pic-group .four-pic-ul {
   opacity: 0;
-  transition: all 1.6s linear;
+  -webkit-transition: all 1.6s linear;
+          transition: all 1.6s linear;
   margin-left: -800px;
 }
 body .four-pic-group .four-pic-ul.scrollTo {
@@ -396,7 +465,8 @@ body .four-pic-group .four-pic-ul .four-pic-li .four-pic-out .four-pic-cover {
   top: 0;
   right: 0;
   bottom: 0;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
 }
 body .four-pic-group .four-pic-ul .four-pic-li:hover .four-pic-cover {
   background: rgba(76, 208, 198, 0.8);
@@ -414,7 +484,7 @@ body .four-pic-group .four-pic-ul .four-pic-li .four-pic-footer-txt p {
 }
 body .second-bg-group {
   position: relative;
-  background: url(../img/module-8.jpg) no-repeat;
+  background: url("../img/module-8.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -425,9 +495,18 @@ body .second-bg-group .second-bg-cover {
   display: none;
 }
 body .second-bg-group .second-bg-cover .second-bg-txt {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 body .second-bg-group .second-bg-cover .second-bg-txt h1 {
   color: #fff;
@@ -453,7 +532,8 @@ body .three-pic-group {
 }
 body .three-pic-group .same-txt {
   opacity: 0;
-  transition: all 2.4s linear;
+  -webkit-transition: all 2.4s linear;
+          transition: all 2.4s linear;
 }
 body .three-pic-group .same-txt.scrollTo {
   opacity: 1;
@@ -463,7 +543,8 @@ body .three-pic-group .container {
 }
 body .three-pic-group .container .three-pic-ul {
   opacity: 0;
-  transition: all 2s linear;
+  -webkit-transition: all 2s linear;
+          transition: all 2s linear;
 }
 body .three-pic-group .container .three-pic-ul.scrollTo {
   opacity: 1;
@@ -503,7 +584,8 @@ body .three-pic-group .three-pic-footer-btn {
   padding: 6em 0 8em;
   text-align: center;
   opacity: 0;
-  transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+          transition: all 1s linear;
 }
 body .three-pic-group .three-pic-footer-btn.scrollTo {
   opacity: 1;
@@ -519,7 +601,8 @@ body .three-pic-group .three-pic-footer-btn a {
   padding: 1em 3em;
   border: 2px solid #8FE1DC;
   border-radius: 2em;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
 }
 body .three-pic-group .three-pic-footer-btn a:hover {
   color: #27CBC0;
@@ -527,7 +610,7 @@ body .three-pic-group .three-pic-footer-btn a:hover {
   padding: 2em 4em;
   border-radius: 4em;
   margin-top: -12px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 body .footer-carousel {
   background: #fff;
@@ -544,10 +627,11 @@ body .footer-carousel {
   vertical-align: middle;
 }
 .links {
-  padding: 0 0 200px 0;
+  padding: 0 0 200px;
   overflow: hidden;
   opacity: 0;
-  transition: all 4s linear;
+  -webkit-transition: all 4s linear;
+          transition: all 4s linear;
 }
 .links.scrollTo {
   opacity: 1;
@@ -558,7 +642,8 @@ body .footer-carousel {
   line-height: 100px;
   position: relative;
   left: 0;
-  transition: all 1.6s linear;
+  -webkit-transition: all 1.6s linear;
+          transition: all 1.6s linear;
 }
 .links .links-outter .link-brand {
   width: 200px;
