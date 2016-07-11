@@ -16,36 +16,20 @@
 .middle-flex {
   height: 100px;
   background-color: red;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
-@font-face {
-  font-family: 'iconfont';
-  src: url('../iconfont/ux_1467212877_0407512/confont.eot');
-  src: url('../iconfont/ux_1467212877_0407512/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../iconfont/ux_1467212877_0407512/iconfont.woff') format('woff'), /* chrome??firefox */ url('../iconfont/ux_1467212877_0407512/iconfont.ttf') format('truetype'), /* chrome??firefox??opera??Safari, Android, iOS 4.2+*/ url('../iconfont/ux_1467212877_0407512/iconfont.svg#iconfont') format('svg')
-  
-  /* IE9*/
-  /* iOS 4.1- */
-}
 dd,
 div,
 dl,
 dt,
+p,
 h1,
 h2,
 h3,
@@ -57,18 +41,6 @@ ol,
 ul {
   margin: 0;
   padding: 0;
-}
-.iconfont {
-  font-family: "iconfont" !important;
-  font-size: 40px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
-}
-::-moz-selection {
-  background: #33CBBF;
-  color: #DEF0F0;
 }
 ::selection {
   background: #33CBBF;
@@ -86,15 +58,17 @@ body,
 html {
   height: 100%;
 }
+body {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
 body .navbar-default {
   border-bottom: none;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  -webkit-transition: all 0.2s linear;
-          transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 body .navbar-default a {
-  color: #ffffff;
+  color: #fff;
 }
 body .navbar-default.scrollTo {
   padding-top: 15px;
@@ -113,18 +87,16 @@ body .navbar-default .navbar-brand img {
   display: inline-block;
 }
 body .navbar-default .navbar-header a {
-  color: #ffffff;
+  color: #fff;
 }
 body .navbar-default .navbar-collapse a {
-  color: #ffffff;
+  color: #fff;
 }
 body .navbar-default .navbar-collapse .navbar-nav img {
   height: 30px;
 }
 body .navbar-default .navbar-collapse .navbar-nav > li:hover img {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 body .navbar-default .navbar-collapse .navbar-form .form-control {
   background: transparent;
@@ -144,8 +116,7 @@ body .header-carousel .carousel-inner .item .header-carousel-cover {
 }
 body .header-carousel .carousel-inner .item .header-carousel-cover .header-carousel-cover-txt {
   opacity: 0;
-  -webkit-transition: all 0.2s linear;
-          transition: all 0.2s linear;
+  transition: all 0.2s linear;
   text-align: center;
   color: #fff;
 }
@@ -158,39 +129,21 @@ body .header-carousel .carousel-inner .item .header-carousel-cover .header-carou
   height: 2em;
   line-height: 2em;
   letter-spacing: 2px;
-  font-size: 1.3em;
+  font-size: 2.3em;
 }
 body .header-carousel .carousel-inner .item .header-carousel-cover .header-carousel-cover-txt.hailuo-right {
   float: right;
   margin-right: 10%;
 }
 body .header-carousel .carousel-inner .item .header-carousel-cover.test {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 body .header-carousel .carousel-inner .item .header-carousel-cover.flexmiddle {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 body .header-carousel .carousel-inner .item img {
   display: none;
@@ -204,7 +157,10 @@ body .same-txt {
   padding-top: 8em;
 }
 body .same-txt h1 {
-  margin: 0 0 0.6em;
+  margin: 0 0 .6em;
+}
+body .same-txt p {
+  margin-top: 0.6em;
 }
 body .same-txt p:after {
   content: '';
@@ -216,8 +172,7 @@ body .same-txt p:after {
 }
 body .MacBook-group .MacBook-header-txt {
   opacity: 0;
-  -webkit-transition: all 2.4s linear;
-          transition: all 2.4s linear;
+  transition: all 2.4s linear;
 }
 body .MacBook-group .MacBook-header-txt.scrollTo {
   opacity: 1;
@@ -226,8 +181,7 @@ body .MacBook-group .MacBook-pic-outer {
   margin-top: 500px;
   text-align: center;
   opacity: 0;
-  -webkit-transition: all 0.6s linear;
-          transition: all 0.6s linear;
+  transition: all 0.6s linear;
 }
 body .MacBook-group .MacBook-pic-outer.scrollTo {
   margin-top: 0;
@@ -244,89 +198,132 @@ body .MacBook-group .MacBook-footer-txt {
   margin-bottom: 6em;
   color: #8D8D8D;
   opacity: 0;
-  -webkit-transition: all 2.4s linear;
-          transition: all 2.4s linear;
+  transition: all 2.4s linear;
 }
 body .MacBook-group .MacBook-footer-txt.scrollTo {
   opacity: 1;
 }
-body .eight-pic-group {
-  background-color: #F8F8F8;
+body .MacBook-group .MacBook-footer-txt p {
+  text-indent: 2em;
+  font-size: 1.4em;
 }
 body .eight-pic-group .same-txt {
   opacity: 0;
-  -webkit-transition: all 2.4s linear;
-          transition: all 2.4s linear;
+  transition: all 2.4s linear;
 }
 body .eight-pic-group .same-txt.scrollTo {
   opacity: 1;
 }
-body .eight-pic-group .row {
-  margin: 0;
+body .eight-pic-group .skill {
+  background: url(../img/bg-transparent.jpg) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 500px;
 }
-body .eight-pic-group .eight-pic-group-title {
-  margin-bottom: 10px;
-  opacity: 0;
-  -webkit-transition: all 2.4s linear;
-          transition: all 2.4s linear;
+body .eight-pic-group .skill:after {
+  content: '';
+  display: block;
+  clear: both;
 }
-body .eight-pic-group .eight-pic-group-title.scrollTo {
+body .eight-pic-group .skill.scrollTo .skill-pic-one {
+  height: 500px;
+}
+body .eight-pic-group .skill.scrollTo .skill-txt h1 {
   opacity: 1;
+  margin: 40px 0 0 20px;
+  color: rgba(0, 0, 0, 0.5);
 }
-body .eight-pic-group .eight-pic-group-title li {
-  text-align: center;
+body .eight-pic-group .skill.scrollTo .skill-txt img.html5 {
+  top: 120px;
+  left: 20px;
 }
-body .eight-pic-group .eight-pic {
-  margin-left: -5px;
-  margin-top: 100px;
-  opacity: 0;
-  -webkit-transition: all 0.4s linear;
-          transition: all 0.4s linear;
+body .eight-pic-group .skill.scrollTo .skill-txt img.css3 {
+  top: 160px;
+  left: 280px;
+  transform: rotate(420deg);
 }
-body .eight-pic-group .eight-pic.scrollTo {
-  margin-top: 0;
-  opacity: 1;
+body .eight-pic-group .skill.scrollTo .skill-txt img.jquery {
+  top: 180px;
+  left: 520px;
+  animation: rotate-self 4s infinite;
 }
-body .eight-pic-group .eight-pic li {
-  padding: 3px;
-  position: relative;
+body .eight-pic-group .skill.scrollTo .skill-txt img.github {
+  top: 120px;
+  left: 620px;
+}
+body .eight-pic-group .skill.scrollTo .skill-txt img.less {
+  top: 320px;
+  left: 480px;
+}
+body .eight-pic-group .skill.scrollTo .skill-txt img.ajax {
+  top: 260px;
+  left: 240px;
+}
+body .eight-pic-group .skill.scrollTo .skill-txt img.bootstrap {
+  top: 400px;
+  left: 80px;
+  animation: bounch 4s infinite;
+}
+body .eight-pic-group .skill.scrollTo .skill-txt img.node {
+  top: 160px;
+  left: 80px;
+  transform: rotate(360deg);
+}
+body .eight-pic-group .skill.scrollTo .skill-txt img.php {
+  top: 360px;
+  left: 280px;
+  transform: rotate(360deg);
+}
+body .eight-pic-group .skill.scrollTo .skill-txt img.sql {
+  top: 260px;
+  left: 180px;
+  animation: rotate-kuai 4s infinite;
+}
+body .eight-pic-group .skill.scrollTo .skill-txt img.vue {
+  top: 280px;
+  left: 480px;
+  animation: bounch 4s infinite;
+}
+body .eight-pic-group .skill.scrollTo .skill-txt img.canvas {
+  top: 160px;
+  left: 480px;
+  transform: rotate(360deg);
+}
+body .eight-pic-group .skill .skill-pic-one {
+  width: 150px;
+  height: 200px;
+  margin-left: 100px;
+  transition: all 1s ease-in;
+  background: url(../img/one-three_01.png) no-repeat;
+}
+body .eight-pic-group .skill .skill-txt {
   overflow: hidden;
+  width: 66%;
+  min-height: 500px;
+  position: relative;
 }
-body .eight-pic-group .eight-pic li .eight-pic-cover {
+body .eight-pic-group .skill .skill-txt h1 {
+  opacity: 0;
+  margin-top: -20px;
+  font-size: 80px;
+  transition: all 2s ease-in;
+}
+body .eight-pic-group .skill .skill-txt img {
   position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-transition: all 0.2s linear;
-          transition: all 0.2s linear;
-  cursor: pointer;
-  padding: 50% 0 0 10%;
+  transition: all 2s ease-in;
+  top: 500px;
+  left: 100px;
 }
-body .eight-pic-group .eight-pic li .eight-pic-cover .eight-pic-txt h1 {
-  color: #fff;
-  font-size: 1.4em;
+body .eight-pic-group .skill.skill1 {
+  background: none;
+  margin-bottom: 4em;
 }
-body .eight-pic-group .eight-pic li .eight-pic-cover .eight-pic-txt p {
-  color: #A3E6E2;
-}
-body .eight-pic-group .eight-pic li img {
-  width: 100%;
-  -webkit-transition: -webkit-transform 200ms ease-out;
-          transition: transform 200ms ease-out;
-}
-body .eight-pic-group .eight-pic li:hover .eight-pic-cover {
-  background-color: rgba(76, 208, 198, 0.8);
-}
-body .eight-pic-group .eight-pic li:hover img {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+body .eight-pic-group .skill.skill2 .skill-pic-one {
+  background-position: -180px 0;
 }
 body .six-li-group .six-ul {
   opacity: 0;
-  -webkit-transition: all 1.6s linear;
-          transition: all 1.6s linear;
+  transition: all 1.6s linear;
   margin-top: 10em;
   margin-bottom: 10em;
 }
@@ -388,8 +385,7 @@ body .first-bg-group .first-bg-cover .first-bg-txt span {
 }
 body .iphone-group .same-txt {
   opacity: 0;
-  -webkit-transition: all 2.4s linear;
-          transition: all 2.4s linear;
+  transition: all 2.4s linear;
 }
 body .iphone-group .same-txt.scrollTo {
   opacity: 1;
@@ -397,8 +393,7 @@ body .iphone-group .same-txt.scrollTo {
 body .iphone-group .iphone-pic-out {
   margin-top: 500px;
   opacity: 0;
-  -webkit-transition: all 0.6s linear;
-          transition: all 0.6s linear;
+  transition: all 0.6s linear;
 }
 body .iphone-group .iphone-pic-out .img-responsive {
   margin: 0 auto 4em;
@@ -409,8 +404,7 @@ body .iphone-group .iphone-pic-out.scrollTo {
 }
 body .iphone-group .iphone-footer-txt {
   opacity: 0;
-  -webkit-transition: all 2.4s linear;
-          transition: all 2.4s linear;
+  transition: all 2.4s linear;
 }
 body .iphone-group .iphone-footer-txt.scrollTo {
   opacity: 1;
@@ -420,8 +414,12 @@ body .iphone-group .iphone-footer-txt .iphone-footer-li {
   padding: 0 2.4em;
   margin-bottom: 8em;
 }
+body .iphone-group .iphone-footer-txt .iphone-footer-li:first-child h1 {
+  margin: 0.4em 0 ;
+}
 body .iphone-group .iphone-footer-txt .iphone-footer-li span {
   color: #30CDC2;
+  font-size: 2em;
 }
 body .iphone-group .iphone-footer-txt .iphone-footer-li h1 {
   font-size: 1.4em;
@@ -430,6 +428,7 @@ body .iphone-group .iphone-footer-txt .iphone-footer-li h1 {
 }
 body .iphone-group .iphone-footer-txt .iphone-footer-li p {
   color: #808080;
+  letter-spacing: 2px;
 }
 body .four-pic-group {
   background: #F8F8F8;
@@ -437,16 +436,14 @@ body .four-pic-group {
 }
 body .four-pic-group .same-txt {
   opacity: 0;
-  -webkit-transition: all 2.4s linear;
-          transition: all 2.4s linear;
+  transition: all 2.4s linear;
 }
 body .four-pic-group .same-txt.scrollTo {
   opacity: 1;
 }
 body .four-pic-group .four-pic-ul {
   opacity: 0;
-  -webkit-transition: all 1.6s linear;
-          transition: all 1.6s linear;
+  transition: all 1.6s linear;
   margin-left: -800px;
 }
 body .four-pic-group .four-pic-ul.scrollTo {
@@ -465,8 +462,7 @@ body .four-pic-group .four-pic-ul .four-pic-li .four-pic-out .four-pic-cover {
   top: 0;
   right: 0;
   bottom: 0;
-  -webkit-transition: all 0.2s linear;
-          transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 body .four-pic-group .four-pic-ul .four-pic-li:hover .four-pic-cover {
   background: rgba(76, 208, 198, 0.8);
@@ -495,18 +491,11 @@ body .second-bg-group .second-bg-cover {
   display: none;
 }
 body .second-bg-group .second-bg-cover .second-bg-txt {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 body .second-bg-group .second-bg-cover .second-bg-txt h1 {
   color: #fff;
@@ -532,8 +521,7 @@ body .three-pic-group {
 }
 body .three-pic-group .same-txt {
   opacity: 0;
-  -webkit-transition: all 2.4s linear;
-          transition: all 2.4s linear;
+  transition: all 2.4s linear;
 }
 body .three-pic-group .same-txt.scrollTo {
   opacity: 1;
@@ -543,8 +531,7 @@ body .three-pic-group .container {
 }
 body .three-pic-group .container .three-pic-ul {
   opacity: 0;
-  -webkit-transition: all 2s linear;
-          transition: all 2s linear;
+  transition: all 2s linear;
 }
 body .three-pic-group .container .three-pic-ul.scrollTo {
   opacity: 1;
@@ -584,8 +571,7 @@ body .three-pic-group .three-pic-footer-btn {
   padding: 6em 0 8em;
   text-align: center;
   opacity: 0;
-  -webkit-transition: all 1s linear;
-          transition: all 1s linear;
+  transition: all 1s linear;
 }
 body .three-pic-group .three-pic-footer-btn.scrollTo {
   opacity: 1;
@@ -601,8 +587,7 @@ body .three-pic-group .three-pic-footer-btn a {
   padding: 1em 3em;
   border: 2px solid #8FE1DC;
   border-radius: 2em;
-  -webkit-transition: all 0.2s linear;
-          transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 body .three-pic-group .three-pic-footer-btn a:hover {
   color: #27CBC0;
@@ -630,8 +615,7 @@ body .footer-carousel {
   padding: 0 0 200px;
   overflow: hidden;
   opacity: 0;
-  -webkit-transition: all 4s linear;
-          transition: all 4s linear;
+  transition: all 4s linear;
 }
 .links.scrollTo {
   opacity: 1;
@@ -642,12 +626,45 @@ body .footer-carousel {
   line-height: 100px;
   position: relative;
   left: 0;
-  -webkit-transition: all 1.6s linear;
-          transition: all 1.6s linear;
+  transition: all 1.6s linear;
 }
 .links .links-outter .link-brand {
+  padding: 20px;
   width: 200px;
   text-align: center;
-  background: #999;
+  background: #fff;
   border: 1px solid #ccc;
+}
+@keyframes bounch {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes rotate-self {
+  33% {
+    transform: rotate(20deg);
+  }
+  66% {
+    transform: rotate(-20deg);
+  }
+}
+@keyframes rotate-kuai {
+  0% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
