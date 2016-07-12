@@ -105,52 +105,56 @@ body .navbar-default .navbar-collapse .navbar-form button {
   background: #ffffff;
   border: none;
 }
-body .header-carousel .carousel-inner .item {
+body .carousel-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #000;
+}
+body .carousel-inner .item {
+  display: none;
+  background-color: #000;
   background-size: cover;
   background-position: center;
+  width: 100%;
+  height: 100%;
 }
-body .header-carousel .carousel-inner .item .header-carousel-cover {
+body .carousel-inner .item.active {
+  display: block;
+}
+body .carousel-inner .header-carousel-cover {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
-}
-body .header-carousel .carousel-inner .item .header-carousel-cover .header-carousel-cover-txt {
-  opacity: 0;
   transition: all 0.2s linear;
   text-align: center;
   color: #fff;
 }
-body .header-carousel .carousel-inner .item .header-carousel-cover .header-carousel-cover-txt h1 {
-  font-size: 6em;
-  letter-spacing: 10px;
+body .carousel-inner .header-carousel-cover .header-carousel-txt div {
+  float: right;
+  margin-right: 10%;
 }
-body .header-carousel .carousel-inner .item .header-carousel-cover .header-carousel-cover-txt p {
+body .carousel-inner .header-carousel-cover .header-carousel-txt div p {
   letter-spacing: 1px;
+  text-align: left;
   height: 2em;
   line-height: 2em;
   letter-spacing: 2px;
   font-size: 2.3em;
 }
-body .header-carousel .carousel-inner .item .header-carousel-cover .header-carousel-cover-txt.hailuo-right {
-  float: right;
-  margin-right: 10%;
-}
-body .header-carousel .carousel-inner .item .header-carousel-cover.test {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .header-carousel .carousel-inner .item .header-carousel-cover.flexmiddle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .header-carousel .carousel-inner .item img {
-  display: none;
-}
-body .header-carousel .carousel-inner .item.active .header-carousel-cover-txt {
-  display: block;
-  opacity: 1;
+body .carousel-inner .cover100 {
+  position: absolute;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 body .same-txt {
   text-align: center;
@@ -188,7 +192,7 @@ body .MacBook-group .MacBook-pic-outer.scrollTo {
   opacity: 1;
 }
 body .MacBook-group .MacBook-pic-outer img {
-  margin: 0 auto;
+  width: 65%;
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -198,7 +202,7 @@ body .MacBook-group .MacBook-footer-txt {
   margin-bottom: 6em;
   color: #8D8D8D;
   opacity: 0;
-  transition: all 2.4s linear;
+  transition: all 1.2s linear;
 }
 body .MacBook-group .MacBook-footer-txt.scrollTo {
   opacity: 1;
@@ -215,111 +219,107 @@ body .eight-pic-group .same-txt.scrollTo {
   opacity: 1;
 }
 body .eight-pic-group .skill {
-  background: url(../img/bg-transparent.jpg) no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  min-height: 500px;
-}
-body .eight-pic-group .skill:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-body .eight-pic-group .skill.scrollTo .skill-pic-one {
-  height: 500px;
-}
-body .eight-pic-group .skill.scrollTo .skill-txt h1 {
-  opacity: 1;
-  margin: 40px 0 0 20px;
-  color: rgba(0, 0, 0, 0.5);
-}
-body .eight-pic-group .skill.scrollTo .skill-txt img.html5 {
-  top: 120px;
-  left: 20px;
-}
-body .eight-pic-group .skill.scrollTo .skill-txt img.css3 {
-  top: 160px;
-  left: 280px;
-  transform: rotate(420deg);
-}
-body .eight-pic-group .skill.scrollTo .skill-txt img.jquery {
-  top: 180px;
-  left: 520px;
-  animation: rotate-self 4s infinite;
-}
-body .eight-pic-group .skill.scrollTo .skill-txt img.github {
-  top: 120px;
-  left: 620px;
-}
-body .eight-pic-group .skill.scrollTo .skill-txt img.less {
-  top: 320px;
-  left: 480px;
-}
-body .eight-pic-group .skill.scrollTo .skill-txt img.ajax {
-  top: 260px;
-  left: 240px;
-}
-body .eight-pic-group .skill.scrollTo .skill-txt img.bootstrap {
-  top: 400px;
-  left: 80px;
-  animation: bounch 4s infinite;
-}
-body .eight-pic-group .skill.scrollTo .skill-txt img.node {
-  top: 160px;
-  left: 80px;
-  transform: rotate(360deg);
-}
-body .eight-pic-group .skill.scrollTo .skill-txt img.php {
-  top: 360px;
-  left: 280px;
-  transform: rotate(360deg);
-}
-body .eight-pic-group .skill.scrollTo .skill-txt img.sql {
-  top: 260px;
-  left: 180px;
-  animation: rotate-kuai 4s infinite;
-}
-body .eight-pic-group .skill.scrollTo .skill-txt img.vue {
-  top: 280px;
-  left: 480px;
-  animation: bounch 4s infinite;
-}
-body .eight-pic-group .skill.scrollTo .skill-txt img.canvas {
-  top: 160px;
-  left: 480px;
-  transform: rotate(360deg);
-}
-body .eight-pic-group .skill .skill-pic-one {
-  width: 150px;
-  height: 200px;
-  margin-left: 100px;
-  transition: all 1s ease-in;
-  background: url(../img/one-three_01.png) no-repeat;
-}
-body .eight-pic-group .skill .skill-txt {
-  overflow: hidden;
-  width: 66%;
-  min-height: 500px;
   position: relative;
+  margin-bottom: 2em;
 }
-body .eight-pic-group .skill .skill-txt h1 {
-  opacity: 0;
-  margin-top: -20px;
-  font-size: 80px;
-  transition: all 2s ease-in;
-}
-body .eight-pic-group .skill .skill-txt img {
+body .eight-pic-group .skill .skill1-pic {
   position: absolute;
-  transition: all 2s ease-in;
-  top: 500px;
-  left: 100px;
+  top: 0;
+  height: 100%;
+  background: url(../img/self-pic1.jpg);
+  background-size: cover;
 }
-body .eight-pic-group .skill.skill1 {
-  background: none;
-  margin-bottom: 4em;
+body .eight-pic-group .skill .skill-div .skill1-ul {
+  background: url(../img/jineng.png);
 }
-body .eight-pic-group .skill.skill2 .skill-pic-one {
-  background-position: -180px 0;
+body .eight-pic-group .skill .skill2-pic {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  background: url(../img/self-pic2.jpg);
+  background-size: cover;
+}
+body .eight-pic-group .skill .skill1-li {
+  text-align: center;
+  height: 200px;
+}
+body .eight-pic-group .skill .skill1-li p {
+  color: #fff;
+  font-size: 2em;
+  margin-top: 2.5em;
+  transition: all 0.2s linear;
+}
+body .eight-pic-group .skill .skill1-li h1 {
+  opacity: 0;
+  transition: all 0.4s linear;
+  margin-top: 20px;
+}
+body .eight-pic-group .skill .skill1-li:hover p {
+  margin-top: 2em;
+  color: #0ff;
+}
+body .eight-pic-group .skill .skill1-li:hover h1 {
+  opacity: 1;
+  margin-top: 8px;
+}
+body .eight-pic-group .skill .skill1-li:nth-child(1) {
+  background: #F2AEB9;
+}
+body .eight-pic-group .skill .skill1-li:nth-child(2) {
+  background: #ec8b9b;
+}
+body .eight-pic-group .skill .skill1-li:nth-child(3) {
+  background: #e76c80;
+}
+body .eight-pic-group .skill .skill1-li:nth-child(4) {
+  background: #ed979e;
+}
+body .eight-pic-group .skill .skill1-li:nth-child(5) {
+  background: #e87982;
+}
+body .eight-pic-group .skill .skill1-li:nth-child(6) {
+  background: #E25661;
+}
+body .eight-pic-group .skill .skill2-li {
+  text-align: center;
+  height: 200px;
+}
+body .eight-pic-group .skill .skill2-li p {
+  color: #fff;
+  font-size: 2em;
+  margin-top: 2.5em;
+  transition: all 0.2s linear;
+}
+body .eight-pic-group .skill .skill2-li h1 {
+  opacity: 0;
+  transition: all 0.4s linear;
+  margin-top: 20px;
+}
+body .eight-pic-group .skill .skill2-li:hover p {
+  margin-top: 2em;
+  color: #87F0BA;
+}
+body .eight-pic-group .skill .skill2-li:hover h1 {
+  opacity: 1;
+  margin-top: 8px;
+}
+body .eight-pic-group .skill .skill2-li:nth-child(1) {
+  background: #80a7d4;
+}
+body .eight-pic-group .skill .skill2-li:nth-child(2) {
+  background: #5A8DC7;
+}
+body .eight-pic-group .skill .skill2-li:nth-child(3) {
+  background: #517ACA;
+}
+body .eight-pic-group .skill .skill2-li:nth-child(4) {
+  background: #4A6BCC;
+}
+body .eight-pic-group .skill .skill2-li:nth-child(5) {
+  background: #3F53D0;
+}
+body .eight-pic-group .skill .skill2-li:nth-child(6) {
+  background: #353DD4;
 }
 body .six-li-group .six-ul {
   opacity: 0;
@@ -395,39 +395,46 @@ body .iphone-group .iphone-pic-out {
   opacity: 0;
   transition: all 0.6s linear;
 }
-body .iphone-group .iphone-pic-out .img-responsive {
-  margin: 0 auto 4em;
+body .iphone-group .iphone-pic-out img {
+  width: 100%;
 }
 body .iphone-group .iphone-pic-out.scrollTo {
   margin-top: 0;
   opacity: 1;
 }
-body .iphone-group .iphone-footer-txt {
-  opacity: 0;
-  transition: all 2.4s linear;
+body .iphone-group .iphone-pic-out .zhengshu-cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
-body .iphone-group .iphone-footer-txt.scrollTo {
+body .iphone-group .iphone-pic-out .zhengshu-cover .iphone-footer-txt {
+  opacity: 0;
+  transition: all 1.2s linear;
+}
+body .iphone-group .iphone-pic-out .zhengshu-cover .iphone-footer-txt.scrollTo {
   opacity: 1;
 }
-body .iphone-group .iphone-footer-txt .iphone-footer-li {
+body .iphone-group .iphone-pic-out .zhengshu-cover .iphone-footer-txt .iphone-footer-li {
   text-align: center;
   padding: 0 2.4em;
-  margin-bottom: 8em;
+  margin-top: 4em;
 }
-body .iphone-group .iphone-footer-txt .iphone-footer-li:first-child h1 {
+body .iphone-group .iphone-pic-out .zhengshu-cover .iphone-footer-txt .iphone-footer-li:first-child h1 {
   margin: 0.4em 0 ;
 }
-body .iphone-group .iphone-footer-txt .iphone-footer-li span {
+body .iphone-group .iphone-pic-out .zhengshu-cover .iphone-footer-txt .iphone-footer-li span {
   color: #30CDC2;
   font-size: 2em;
 }
-body .iphone-group .iphone-footer-txt .iphone-footer-li h1 {
+body .iphone-group .iphone-pic-out .zhengshu-cover .iphone-footer-txt .iphone-footer-li h1 {
   font-size: 1.4em;
   font-weight: bold;
   margin: 0.6em 0;
+  color: #ddd;
 }
-body .iphone-group .iphone-footer-txt .iphone-footer-li p {
-  color: #808080;
+body .iphone-group .iphone-pic-out .zhengshu-cover .iphone-footer-txt .iphone-footer-li p {
+  color: #E0DED6;
   letter-spacing: 2px;
 }
 body .four-pic-group {
@@ -443,7 +450,7 @@ body .four-pic-group .same-txt.scrollTo {
 }
 body .four-pic-group .four-pic-ul {
   opacity: 0;
-  transition: all 1.6s linear;
+  transition: all 1s linear;
   margin-left: -800px;
 }
 body .four-pic-group .four-pic-ul.scrollTo {
@@ -479,6 +486,7 @@ body .four-pic-group .four-pic-ul .four-pic-li .four-pic-footer-txt p {
   color: #808080;
 }
 body .second-bg-group {
+  height: 300px;
   position: relative;
   background: url("../img/module-8.jpg") no-repeat;
   background-size: cover;
@@ -615,7 +623,7 @@ body .footer-carousel {
   padding: 0 0 200px;
   overflow: hidden;
   opacity: 0;
-  transition: all 4s linear;
+  transition: all 2s linear;
 }
 .links.scrollTo {
   opacity: 1;

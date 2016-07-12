@@ -7,11 +7,18 @@
     <meta http-equiv="x-ua-compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/lib/button.css" />
+    <!--<link rel="stylesheet" href="css/lib/button.css" />-->
+    <link rel="stylesheet" href="css/lib/main.css" />
     <link rel="stylesheet" href="css/project-bootstrap.css" />
     <!--<link rel=" shortcut icon " href="/favicon.ico" type="image/x-icon"/>-->
     <link type="image/x-icon" rel="shortcut icon" href="nihao.ico" />
     <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <!--背景hover动-->
+    <link rel="stylesheet" type="text/css" href="css/lib/normalize.css" />
+    <!--进度条-->
+    <link rel="stylesheet" type="text/css" href="css/lib/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/lib/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/lib/custom-bars.css" />
     <!--[if lt IE 9]-->
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
@@ -46,150 +53,113 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <div class="header-carousel">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            </ol>
+    <div class="carousel-inner" >
+        <div class="item active"  data-num="0" style="background-image: url(img/bg-hai.jpg)"></div>
+        <div class="item"  data-num="1" style="background-image: url(img/bg-footer.jpg)"></div>
+        <div class="item"  data-num="2" style="background-image: url(img/bg-book.jpg)"></div>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active" style="background-image: url(img/bg-hai.jpg)">
-                    <div class="middle-outter">
-                        <div class="header-carousel-cover middle-inner">
-                            <div class="header-carousel-cover-txt hailuo-right">
-                                <!--<h1>Discover <br/> True Power</h1>-->
-                                <!--<p>I am honored that my works can be seen by your company.</p>-->
-                                <div style="text-align: left">
-                                    <p>姓名：徐世奇</p>
-                                    <p>籍贯：温州</p>
-                                    <p>出生日期：1992/04</p>
-                                    <p>毕业院校：湖州师范学院</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-caption">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item" style="background-image: url(img/bg-footer.jpg)">
-                    <div class="header-carousel-cover test">
-                        <div class="header-carousel-cover-txt">
-                            <h1>Discover <br/> True Power</h1>
-                            <p>I am honored that my works can be seen by your company.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-caption">
-                    </div>
-                </div>
-
-                <div class="item" style="background-image: url(img/bg-book.jpg)">
-                    <div class="header-carousel-cover flexmiddle">
-                        <div class="header-carousel-cover-txt">
-                            <h1>Discover <br/> True Power</h1>
-                            <p>I am honored that my works can be seen by your company.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-caption">
-                    </div>
+        <div class="header-carousel-cover middle-outter">
+            <div class="header-carousel-txt middle-inner">
+                <div>
+                    <p>姓名：徐世奇</p>
+                    <p>籍贯：温州</p>
+                    <p>出生日期：1992/04</p>
+                    <p>毕业院校：湖州师范学院</p>
                 </div>
             </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            </a>
         </div>
+
+        <div class="cover100">
+            <div id="large-header" class="large-header">
+                <canvas id="demo-canvas"></canvas>
+            </div>
+        </div>
+
     </div>
+    <!--<div class="header-carousel">-->
+        <!--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">-->
+            <!--&lt;!&ndash; Indicators &ndash;&gt;-->
+            <!--<ol class="carousel-indicators">-->
+                <!--<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>-->
+                <!--<li data-target="#carousel-example-generic" data-slide-to="1"></li>-->
+                <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+            <!--</ol>-->
+
+            <!--&lt;!&ndash; Wrapper for slides &ndash;&gt;-->
+            <!--<div class="carousel-inner" role="listbox">-->
+                <!--<div class="item active" style="background-image: url(img/bg-hai.jpg)">-->
+                    <!--<div class="middle-outter">-->
+                        <!--<div class="header-carousel-cover middle-inner">-->
+                            <!--<div class="header-carousel-cover-txt hailuo-right">-->
+                                <!--&lt;!&ndash;<h1>Discover <br/> True Power</h1>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<p>I am honored that my works can be seen by your company.</p>&ndash;&gt;-->
+                                <!--<div style="text-align: left">-->
+                                    <!--<p>姓名：徐世奇</p>-->
+                                    <!--<p>籍贯：温州</p>-->
+                                    <!--<p>出生日期：1992/04</p>-->
+                                    <!--<p>毕业院校：湖州师范学院</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="carousel-caption">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="item" style="background-image: url(img/bg-footer.jpg)">-->
+                    <!--<div class="header-carousel-cover test">-->
+                        <!--<div class="header-carousel-cover-txt">-->
+                            <!--<h1>Discover <br/> True Power</h1>-->
+                            <!--<p>I am honored that my works can be seen by your company.</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="carousel-caption">-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="item" style="background-image: url(img/bg-book.jpg)">-->
+                    <!--<div class="header-carousel-cover flexmiddle">-->
+                        <!--<div class="header-carousel-cover-txt">-->
+                            <!--<h1>Discover <br/> True Power</h1>-->
+                            <!--<p>I am honored that my works can be seen by your company.</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="carousel-caption">-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--&lt;!&ndash; Controls &ndash;&gt;-->
+            <!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">-->
+                <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+            <!--</a>-->
+            <!--<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">-->
+                <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+            <!--</a>-->
+        <!--</div>-->
+    <!--</div>-->
+
 
     <div class="MacBook-group container">
         <div class="MacBook-header-txt same-txt">
-            <!--<h1>我的大学</h1>-->
             <img src="img/my-colleage.png" alt=""/>
             <p><img src="img/graduatedP.png" alt=""/></p>
         </div>
-        <div class="MacBook-pic-outer ">
-            <!--<img src="img/mega-mockup.png" class="img-responsive" alt=""/>-->
-            <img src="img/huzhou-teachers.jpg" style="width:50%;" alt="" />
-        </div>
-        <div class="MacBook-footer-txt  col-sm-8 col-sm-offset-2">
-            <p>
-                <!--湖州师范学院校训&#45;&#45;明体达用：即经义与治事的有机结合。师于古而用于今，“明体达用”内涵的现代意义，即明德立志，学习做人；学以致用，学会做事。就现代意义来讲，师范学院不仅担负着培养高水平的师资使命，同时随着社会的发展，更被赋予了一种全新意义的综合性人才培养基地的标识。师院学子我自豪！-->
-                大学期间第一次接触了C语言这门课程，当时同学对这门课程都有着一丝的恐惧，都觉得这门课程很难。不过接触之后我发现这门课程挺吸引我的，虽然比较烧脑，但是当自己写的代码能实现一定功能的时候特别有成就感。
-            </p>
-            <p>
-                后来考计算机等级考试的时候，大部分人选择了较为简单的办公软件高级应用，不过自己还是选择了C语言，很亲幸，第一次就过了。
-            </p>
+        <div class="row">
+            <div class="MacBook-pic-outer col-xs-8">
+                <img src="img/huzhou-teachers.jpg" alt="" />
+            </div>
+
+            <div class="MacBook-footer-txt  col-xs-4">
+                <p>大学期间第一次接触了C语言这门课程，当时同学对这门课程都有着一丝的恐惧，都觉得这门课程很难。不过接触之后我发现这门课程挺吸引我的，虽然比较烧脑，但是当自己写的代码能实现一定功能的时候特别有成就感。
+                </p><br/>
+                <p>后来考计算机等级考试的时候，大部分人选择了较为简单的办公软件高级应用，不过自己还是选择了C语言，很庆幸，第一次就过了。
+                </p><br/>
+                <p>现在毕业一年，重拾大学的爱好，经过这一段时间的全面学习，对web前端掌握的更加深入、透彻，也希望未来能在这条路上走得长远。师院学子我自豪！
+                </p>
+            </div>
         </div>
     </div>
-
-    <!--<div class="eight-pic-group">-->
-        <!--<div class="same-txt">-->
-            <!--<h1>我的家乡</h1>-->
-            <!--<p>I come from Wenzhou. This is a beautiful place.</p>-->
-        <!--</div>-->
-
-        <!--<div class="row">-->
-
-            <!--<ul class="eight-pic-group-title list-inline col-sm-6 col-sm-offset-3">-->
-                <!--<li class="active col-sm-2 col-sm-offset-1">全部</li>-->
-                <!--<li class=" col-sm-2">旅游</li>-->
-                <!--<li class=" col-sm-2">小吃</li>-->
-                <!--<li class=" col-sm-2">人文</li>-->
-                <!--<li class=" col-sm-2">历史</li>-->
-            <!--</ul>-->
-            <!--<ul class="eight-pic list-inline">-->
-                <!--<li class="col-xs-12 col-sm-6 col-md-3">-->
-                    <!--<img src="img/moutain.jpg" alt="" class="img-responsive" />-->
-                    <!--<div class="eight-pic-cover">-->
-                        <!--<div class="eight-pic-txt">-->
-                            <!--<h1>温州旅游</h1>-->
-                            <!--<P>雁荡山</P>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</li>-->
-
-                <!--<li class="col-xs-12 col-sm-6 col-md-3">-->
-                    <!--<img src="img/river.jpg" alt="" class="img-responsive" />-->
-                    <!--<div class="eight-pic-cover">-->
-                        <!--<div class="eight-pic-txt">-->
-                            <!--<h1>温州旅游</h1>-->
-                            <!--<P>楠溪江</P>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</li>-->
-
-                <!--<li class="col-xs-12 col-sm-6 col-md-3">-->
-                    <!--<img src="img/pig-gao.jpg" alt="" class="img-responsive" />-->
-                    <!--<div class="eight-pic-cover">-->
-                        <!--<div class="eight-pic-txt">-->
-                            <!--<h1>温州小吃</h1>-->
-                            <!--<P>猪油糕</P>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</li>-->
-
-                <!--<li class="col-xs-12 col-sm-6 col-md-3">-->
-                    <!--<img src="img/light-gao.jpg" alt="" class="img-responsive" />-->
-                    <!--<div class="eight-pic-cover">-->
-                        <!--<div class="eight-pic-txt">-->
-                            <!--<h1>温州小吃</h1>-->
-                            <!--<P>灯盏糕</P>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</li>-->
-            <!--</ul>-->
-
-
-        <!--</div>-->
-    <!--</div>-->
 
     <div class="eight-pic-group">
         <div class="same-txt">
@@ -197,97 +167,77 @@
             <p><img src="img/skillsP.png" alt=""/></p>
         </div>
 
-        <div class='skill skill1'>
-            <div class="skill-pic-one pull-left"></div>
-            <div class="skill-txt pull-left" >
-               <h1>熟练使用</h1>
-                <img src="img/html5.png" class="html5" alt=""/>
-                <img src="img/css3.png" class="css3" alt=""/>
-                <img src="img/jquery.png" class="jquery" alt=""/>
-                <img src="img/github.png" class="github" alt=""/>
-                <img src="img/less.png" class="less" alt=""/>
-                <img src="img/ajax.png" class="ajax" alt=""/>
-                <img src="img/bootstrap.png" class="bootstrap" alt=""/>
+        <div class='skill skill1 row'>
+            <div class="skill1-pic col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1 " >
+                <!--<img src="img/self-pic1.jpg" class="img-responsive" alt=""/>-->
+            </div>
+            <div class="skill-div col-sm-10 col-sm-offset-12 col-md-5 col-md-offset-6 list-unstyled">
+                <ul class="skill1-ul row list-unstyled">
+                    <li class="skill1-li skill-li col-xs-4" data-percent="86"><p>html5</p> <h1>80%</h1></li>
+                    <li class="skill1-li skill-li col-xs-4" data-percent="92"><p>css3  </p> <h1>78%</h1></li>
+                    <li class="skill1-li skill-li col-xs-4" data-percent="82"><p>jquery </p> <h1>92%</h1></li>
+                    <li class="skill1-li skill-li col-xs-4" data-percent="75"><p>bootstrap </p> <h1>65%</h1></li>
+                    <li class="skill1-li skill-li col-xs-4" data-percent="70"><p>ajax </p> <h1>25%</h1></li>
+                    <li class="skill1-li skill-li col-xs-4" data-percent="70"><p>less & sass</p> <h1>18%</h1></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class='skill skill2 row'>
+            <div class="skill-div col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1 list-unstyled">
+                <ul class="skill2-ul row list-unstyled">
+                    <li class="skill2-li skill-li col-xs-4" data-percent="65"><p>node.js</p> <h1>80%</h1></li>
+                    <li class="skill2-li skill-li col-xs-4" data-percent="68"><p>vue  </p> <h1>78%</h1></li>
+                    <li class="skill2-li skill-li col-xs-4" data-percent="60"><p>canvas </p> <h1>92%</h1></li>
+                    <li class="skill2-li skill-li col-xs-4" data-percent="68"><p>github </p> <h1>65%</h1></li>
+                    <li class="skill2-li skill-li col-xs-4" data-percent="65"><p>PHP </p> <h1>25%</h1></li>
+                    <li class="skill2-li skill-li col-xs-4" data-percent="60"><p>SQL</p> <h1>18%</h1></li>
+                </ul>
+            </div>
+            <div class="skill2-pic  col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-6" >
+                <!--<img src="img/self-pic2.jpg" class="img-responsive" alt=""/>-->
             </div>
         </div>
 
         <div class='skill skill2'>
-            <div class="skill-pic-one pull-left"></div>
-            <div class="skill-txt pull-left" >
-                <h1>初步掌握</h1>
 
-                <img src="img/node-js.png" class="node" alt=""/>
-                <img src="img/php.png" class="php" alt=""/>
-                <img src="img/sql.png" class="sql" alt=""/>
-                <img src="img/vue.png" class="vue" alt=""/>
-                <img src="img/canvas.png" class="canvas" alt=""/>
-            </div>
         </div>
     </div>
 
-    <!--<div class="six-li-group container">-->
-        <!--<ul class="six-ul list-inline row">-->
-            <!--<li class="six-li col-xs-12 col-sm-4">-->
-                <!--<div class="row">-->
-                    <!--<div class="six-left-pic pull-left col-xs-12 col-sm-2 iconfont">&#xe6fb;</div>-->
-                    <!--<div class="six-right-txt pull-left col-xs-12 col-sm-10">-->
-                        <!--<h1>HTML5、css3</h1>-->
-                        <!--<p>能独立并熟练完成页面的整体布局-->
-                        <!--</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</li>-->
+    <!--<div class="eight-pic-group">-->
+        <!--<div class="same-txt">-->
+            <!--<img src="img/gerenjineng.png" alt=""/>-->
+            <!--<p><img src="img/skillsP.png" alt=""/></p>-->
+        <!--</div>-->
 
-            <!--<li class="six-li col-xs-12 col-sm-4">-->
-                <!--<div class="row">-->
-                    <!--<div class="six-left-pic pull-left col-xs-12 col-sm-2 iconfont">&#xe6fb;</div>-->
-                    <!--<div class="six-right-txt pull-left col-xs-12 col-sm-10">-->
-                        <!--<h1>楠溪江</h1>-->
-                        <!--<p>楠溪江源头及中上游两岸，有多姿多彩、千奇百怪的瀑布50多处，两岸有3万亩滩林。东与雁荡山毗邻，西接缙云仙都，北与仙居景区接壤。</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</li>-->
+        <!--<div class='skill skill1'>-->
+            <!--<div class="skill-pic-one pull-left"></div>-->
+            <!--<div class="skill-txt pull-left" >-->
+                <!--<h1>熟练使用</h1>-->
+                <!--<img src="img/html5.png" class="html5" alt=""/>-->
+                <!--<img src="img/css3.png" class="css3" alt=""/>-->
+                <!--<img src="img/jquery.png" class="jquery" alt=""/>-->
+                <!--<img src="img/github.png" class="github" alt=""/>-->
+                <!--<img src="img/less.png" class="less" alt=""/>-->
+                <!--<img src="img/ajax.png" class="ajax" alt=""/>-->
+                <!--<img src="img/bootstrap.png" class="bootstrap" alt=""/>-->
+            <!--</div>-->
+        <!--</div>-->
 
-            <!--<li class="six-li col-xs-12 col-sm-4">-->
-                <!--<div class="row">-->
-                    <!--<div class="six-left-pic pull-left col-xs-12 col-sm-2 iconfont">&#xe6fb;</div>-->
-                    <!--<div class="six-right-txt pull-left col-xs-12 col-sm-10">-->
-                        <!--<h1>江心屿</h1>-->
-                        <!--<p>江心屿位于温州市区北面瓯江中游，呈东西长、南北狭的形状，属于中国四大名屿。该屿风景秀丽，东西双塔凌空，映衬江心寺，历来被称为“瓯江蓬莱”。</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</li>-->
+        <!--<div class='skill skill2'>-->
+            <!--<div class="skill-pic-one pull-left"></div>-->
+            <!--<div class="skill-txt pull-left" >-->
+                <!--<h1>初步掌握</h1>-->
 
-            <!--<li class="six-li col-xs-12 col-sm-4">-->
-                <!--<div class="row">-->
-                    <!--<div class="six-left-pic pull-left col-xs-12 col-sm-2 iconfont">&#xe6fb;</div>-->
-                    <!--<div class="six-right-txt pull-left col-xs-12 col-sm-10">-->
-                        <!--<h1>猪油糕</h1>-->
-                        <!--<p>猪油糕又名脂油糕，属闽式糕点。早在清代就已著名，《元和唯亭志》称其为“吴中佳制”。猪油糕是用猪油制成，洁白晶莹，葱香翠绿，糯软润湿，入口油而不腻。</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</li>-->
-
-            <!--<li class="six-li col-xs-12 col-sm-4">-->
-                <!--<div class="row">-->
-                    <!--<div class="six-left-pic pull-left col-xs-12 col-sm-2 iconfont">&#xe6fb;</div>-->
-                    <!--<div class="six-right-txt pull-left col-xs-12 col-sm-10">-->
-                        <!--<h1>灯盏糕</h1>-->
-                        <!--<p>灯盏糕是浙江温州的汉族特色名点，温州十大名小吃之一。属于油炸食品，历史悠久，最远可追溯至元末明初。</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</li>-->
-
-            <!--<li class="six-li col-xs-12 col-sm-4">-->
-                <!--<div class="row">-->
-                    <!--<div class="six-left-pic pull-left col-xs-12 col-sm-2 iconfont">&#xe6fb;</div>-->
-                    <!--<div class="six-right-txt pull-left col-xs-12 col-sm-10">-->
-                        <!--<h1>鸭舌</h1>-->
-                        <!--<p>温州鸭舌是一道浙江温州著名的汉族小吃，属于凉菜，鸭舌是卤的，风至半干，在口中细嚼，韧性十足，颇为耐嚼。</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</li>-->
-        <!--</ul>-->
+                <!--<img src="img/node-js.png" class="node" alt=""/>-->
+                <!--<img src="img/php.png" class="php" alt=""/>-->
+                <!--<img src="img/sql.png" class="sql" alt=""/>-->
+                <!--<img src="img/vue.png" class="vue" alt=""/>-->
+                <!--<img src="img/canvas.png" class="canvas" alt=""/>-->
+            <!--</div>-->
+        <!--</div>-->
     <!--</div>-->
 
     <div class="first-bg-group">
@@ -301,35 +251,33 @@
 
     <div class="iphone-group">
         <div class="iphone-header-txt same-txt">
-            <!--<h1>My credentials</h1>-->
             <img src="img/jineng.png" alt=""/>
             <p><img src="img/credentialsP.png" alt=""/></p>
         </div>
 
-        <div class="iphone-pic-out container">
-            <img src="img/zhengshu.jpg" class="img-responsive" alt="" />
+        <div class="iphone-pic-out">
+            <div style="width:80%;max-width:1000px;margin:0 auto;position: relative;">
+                <img src="img/zhengshu.jpg" alt="" />
+                <div class="zhengshu-cover">
+                    <ul class="iphone-footer-txt list-unstyled row ">
+                        <li class="iphone-footer-li col-sm-12 col-md-offset-1 col-md-6 ">
+                            <span class="fa fa-graduation-cap"></span>
+                            <h1>CET4</h1>
+                            <p>At the beginning of the two tests I have failed, it is a bit worse. Later I almost every day to see the books in the bedroom , and finally I achieved satisfactory results. Now
+                                when I recall that it is also a full of memories</p>
+                        </li>
+
+                        <li class="iphone-footer-li col-sm-12 col-md-offset-1 col-md-6 ">
+                            <span class="fa fa-graduation-cap"></span>
+                            <h1>C语言二级</h1>
+                            <p>Everybody said of the logic of the subject is very strong, the exam is difficult , so people are want to test the office-level . but I choose the C-language,I reading in the library for two weeks, at last I was passed magically</p>
+                        </li>
+                    </ul>
+            </div>
+            </div>
         </div>
 
-        <ul class="iphone-footer-txt row list-inline">
-            <li class="iphone-footer-li col-xs-12 col-sm-offset-2 col-sm-4 ">
-                <span class="fa fa-graduation-cap"></span>
-                <h1><img src="img/cet4.png" alt=""/></h1>
-                <p>At the beginning of the two tests I have failed, it is a bit worse. Later I almost every day to see the books in the bedroom , and finally I achieved satisfactory results. Now
-                    when I recall that it is also a full of memories</p>
-            </li>
 
-            <li class="iphone-footer-li col-xs-12 col-sm-4 ">
-                <span class="fa fa-graduation-cap"></span>
-                <h1><img src="img/cyuyan.png" alt=""/></h1>
-                <p>Everybody said of the logic of the subject is very strong, the exam is difficult , so people are want to test the office-level . but I choose the C-language,I reading in the library for two weeks, at last I was passed magically</p>
-            </li>
-
-            <!--<li class="iphone-footer-li col-xs-12 col-sm-4 ">-->
-            <!--<span class="iconfont">&#xe655;</span>-->
-            <!--<h1>Branding</h1>-->
-            <!--<p>Donec pede justo fringilla vel aliquet nec vulputate eget arcu. In enim justo rhoncus ut imperdiet a venenatis vitae justo.</p>-->
-            <!--</li>-->
-        </ul>
 
     </div>
 
@@ -388,7 +336,7 @@
         </div>
     </div>
 
-    <div class="second-bg-group" style="height:300px;">
+    <div class="second-bg-group">
         <div class="second-bg-cover">
             <div class="second-bg-txt">
                 <h1>Add a little background to ease up!</h1>
@@ -443,7 +391,7 @@
                     <div class="card">
                         <a href="#"><img src="img/third-work.jpg" class="img-responsive" alt="" /></a>
                         <div class="three-pic-txt">
-                            <h1>我的第三个作品(就是这个)</h1>
+                            <h1>我的第三个作品(this one)</h1>
                             <h2>&nbsp;&nbsp;My third work</h2>
                             <p>整体布局运用了bootstrap框架，并下载了js插件，有了轮播和各种动态效果。
                                 <br/> 有了之前的经验，这个做起来就有点感觉了。不仅有了整体上的把控，对于局部也更加注重,整体效果更加协调。
@@ -457,12 +405,6 @@
 
         <div class="three-pic-footer-btn">
             <a href="">END</a>
-
-            <a href="">谢谢观看</a>
-            <button id="component-2" class="button button--2">
-					联系我
-					<span class="button__bg"></span>
-			</button>
         </div>
 
         <div class="container links">
@@ -478,21 +420,77 @@
         </div>
     </div>
 
-    <!--<div class="footer-carousel" style="height:300px;"></div>-->
-    <!--<div class="footer"></div>-->
-
     <script src="js/jquery-1.11.3.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/Headroom.js"></script>
-
-
+    <!--btn-click*2-->
     <script src="js/TweenMax.min.js"></script>
-    		<script src="js/main.js"></script>
-
+    <script src="js/main.js"></script>
+    <!--背景hover动*3-->
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/EasePack.min.js"></script>
+    <script src="js/demo-1.js"></script>
     <script>
-        //导航条
+
+        //技能点击数字变换：
+            $('.skill-li').hover(function(){
+                var h1 = $(this).children('h1');
+                var num = parseInt( $(this).data("percent") );
+                var timer;
+                var i = 0;
+                var s = 0;
+
+                timer=setInterval(function(){
+                    if(i<10){
+                        s+=num/10;
+                        h1.html( Math.round(s) + '%') ;
+                        i++;
+                    }else{
+                        clearInterval(timer);
+                    }
+                },36);
+            })
+
+//
+
+//        $('.skill1-li').click(function(){
+//            var h1 = $(this).children('h1');
+//            var num = h1.html();
+//            var timer;
+//            alert(123);
+//            for(var i= 0,s=0;i<10;i++){
+//                alert(456);
+//                s+=num/10;
+//                function(){
+//
+//                    timer = setTimeout(function(){
+//                        alert(789);
+//                        h1.html(s);
+//                    },200)
+//                }()
+//            }
+//            console.log(  )
+//        })
+
+
+
+
+//        nav三张图切换
+        var numb=0;
+        var timer = setInterval(function(){
+            $('[data-num='+numb+']').fadeOut(1000,function(){
+                numb++;
+                if(numb>=3){numb=0}
+                $('[data-num='+numb+']').fadeIn(1000)
+            });
+        },8000)
+
+
         //页脚赞助商滚动
+        window.onload = function() {
+            linksInit();
+        }
+
         function linksInit() {
             var current = 0;
             var length = $('.link-brand').length;
@@ -531,10 +529,6 @@
             })
         }
 
-        window.onload = function() {
-            linksInit();
-        }
-
 
 
         //图片滚动移入
@@ -547,138 +541,30 @@
         }
 
         $(window).on('scroll', function() {
-                scrollFunction('navbar-default', 200);
-                scrollFunction('MacBook-pic-outer', 300);
-                scrollFunction('eight-pic', 1400);
-                scrollFunction('six-ul', 1760);
-                scrollFunction('iphone-pic-out', 2700);
-                scrollFunction('iphone-footer-txt', 3100);
-                scrollFunction('four-pic-ul', 3600);
-                scrollFunction('three-pic-ul', 4800);
-                scrollFunction('three-pic-txt', 5000);
-                scrollFunction('MacBook-header-txt', 200);
-                scrollFunction('MacBook-footer-txt', 800);
-                scrollFunction('eight-pic-group .same-txt', 1200);
-//                scrollFunction('eight-pic-group-title', 1300);
-                scrollFunction('skill', 1300);
-                scrollFunction('iphone-group .same-txt', 2600);
-                scrollFunction('four-pic-header-txt', 3400);
-                scrollFunction('three-pic-header-txt', 4700);
-                scrollFunction('three-pic-footer-btn', 5400);
-                scrollFunction('links', 5800);
+            scrollFunction('navbar-default', 200);
+            scrollFunction('MacBook-header-txt', 300);
+            scrollFunction('MacBook-pic-outer', 300);
+            scrollFunction('MacBook-footer-txt', 400);
+            scrollFunction('eight-pic-group .same-txt', 1100);
+//          scrollFunction('eight-pic-group-title', 1300);
+//            scrollFunction('skill', 1300);
+            //           scrollFunction('eight-pic', 1400);
+            scrollFunction('six-ul', 1760);
+            scrollFunction('iphone-group .same-txt', 2600);
+            scrollFunction('iphone-pic-out', 2700);
+            scrollFunction('iphone-footer-txt', 2800);
+            scrollFunction('four-pic-header-txt', 3500);
+            scrollFunction('four-pic-ul', 3600);
+            scrollFunction('three-pic-header-txt', 4500);
+            scrollFunction('three-pic-ul', 4700);
+            //           scrollFunction('three-pic-txt', 5000);
+            scrollFunction('three-pic-footer-btn', 5100);
+            scrollFunction('links', 5300);
             })
-            //        $(window).on('scroll',function(event){
-            //            if(document.body.scrollTop>200){
-            //                $('.nav').addClass('active');
-            //            }else{
-            //                $('.nav').removeClass('active');
-            //            }
-            //        })
-            //mac图
-            //        $(window).on('scroll',function(){
-            //            if(document.body.scrollTop>300){
-            //                $('.MacBook-pic-outer').addClass('scrollTo')
-            //            }else{
-            //                $('.MacBook-pic-outer').removeClass('scrollTo')
-            //            }
-            //        })
+$(window).scroll(function(){
+    console.log( document.body.scrollTop )
 
-        //        $(window).on('scroll',function(){
-        //            console.log(document.body.scrollTop)
-        //            if(document.body.scrollTop>1400){
-        //                $('.eight-pic').addClass('scrollTo')
-        //            }else{
-        //                $('.eight-pic').removeClass('scrollTo')
-        //            }
-        //        })
-
-
-
-        //  })
-
-
-
-
-        //        function linksInit(){
-        //            var length = $(".links .link-brand").length;
-        //            var current = 0 ;
-        //            var brandCount = 6;
-        //            var duration = 1500;
-        //            var $links = $(".links-outter");       //？？
-        //
-        //            var $brands = $(".link-brand");         //??
-        //            var $linkEl = $(".links");
-        //            var linkWidth = $linkEl.width();    //显示宽度
-        //            var brandWith = linkWidth/brandCount;
-        //            var timer ;
-        //            var running = false;
-        //
-        //            $brands.each(function(){
-        //                this.style.width = brandWith + "px";
-        //            })
-        //
-        //            $links.width(brandWith * length + "px");
-        //
-        //            function linksMove(to){
-        //                $links.css("left", (- to * brandWith )+ "px" );
-        //            }
-        //
-        //            function linkStart(){
-        //                if(!running){
-        //                    timer = setInterval(function(){
-        //                        linksMove(current+1);
-        //                        current  = current +1;
-        //                        if(current == length - brandCount) current=-1;
-        //                    },duration);
-        //                    running = true;
-        //                }
-        //            }
-        //            linkStart();
-        //
-        //            $linkEl.hover(function(){
-        //                clearInterval(timer)
-        //                running = false;
-        //            },function(){
-        //                linkStart();
-        //            })
-        //
-        //
-        //        }
-        //
-        //        $(window).load(function(){
-        //            linksInit();
-        //
-        //
-
-
-
-
-
-
-
-        //
-        //
-        //        var nav = document.querySelector(".nav");
-        //        console.log(nav)
-        //        // construct an instance of Headroom, passing the element
-        //        var headroom  = new Headroom(nav,{
-        //            "offset": 205,
-        //            "tolerance": 5,
-        //            "classes": {
-        //                "initial": "animated",
-        //                "pinned": "bounceInDown",
-        //                "unpinned": "bounceOutUp"
-        //            }
-        //        });
-        //        // initialise
-        //
-        //        headroom.init();
-        //
-
-
-        //);
-        //
+})
     </script>
 </body>
-
 </html>
