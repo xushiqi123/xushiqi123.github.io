@@ -232,16 +232,54 @@ body .eight-pic-group .skill .skill1-pic {
 body .eight-pic-group .skill .skill-div .skill1-ul {
   background: url(../img/jineng.png);
 }
-body .eight-pic-group .skill .skill2-pic {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  background: url(../img/self-pic2.jpg);
-  background-size: cover;
-}
 body .eight-pic-group .skill .skill1-li {
   text-align: center;
   height: 200px;
+  position: relative;
+}
+body .eight-pic-group .skill .skill1-li:hover .skill-loop-1,
+body .eight-pic-group .skill .skill1-li:hover .skill-loop-3 {
+  width: 100%;
+}
+body .eight-pic-group .skill .skill1-li:hover .skill-loop-2,
+body .eight-pic-group .skill .skill1-li:hover .skill-loop-4 {
+  height: 100%;
+}
+body .eight-pic-group .skill .skill1-li .skill-loop-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 4px;
+  background: #B7F281;
+  transition: all 0.3s ease-in;
+}
+body .eight-pic-group .skill .skill1-li .skill-loop-2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 4px;
+  height: 0;
+  background: #B7F281;
+  transition: all 0.3s ease-in;
+}
+body .eight-pic-group .skill .skill1-li .skill-loop-3 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  background: #B7F281;
+  transition: all 0.3s ease-in;
+}
+body .eight-pic-group .skill .skill1-li .skill-loop-4 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  height: 0;
+  background: #B7F281;
+  transition: all 0.3s ease-in;
 }
 body .eight-pic-group .skill .skill1-li p {
   color: #fff;
@@ -256,10 +294,11 @@ body .eight-pic-group .skill .skill1-li h1 {
 }
 body .eight-pic-group .skill .skill1-li:hover p {
   margin-top: 2em;
-  color: #0ff;
+  color: #fff;
 }
 body .eight-pic-group .skill .skill1-li:hover h1 {
   opacity: 1;
+  color: #B7F281;
   margin-top: 8px;
 }
 body .eight-pic-group .skill .skill1-li:nth-child(1) {
@@ -283,6 +322,51 @@ body .eight-pic-group .skill .skill1-li:nth-child(6) {
 body .eight-pic-group .skill .skill2-li {
   text-align: center;
   height: 200px;
+  position: relative;
+}
+body .eight-pic-group .skill .skill2-li:hover .skill-loop-1,
+body .eight-pic-group .skill .skill2-li:hover .skill-loop-3 {
+  width: 100%;
+}
+body .eight-pic-group .skill .skill2-li:hover .skill-loop-2,
+body .eight-pic-group .skill .skill2-li:hover .skill-loop-4 {
+  height: 100%;
+}
+body .eight-pic-group .skill .skill2-li .skill-loop-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 4px;
+  background: #87F0BA;
+  transition: all 0.3s ease-in;
+}
+body .eight-pic-group .skill .skill2-li .skill-loop-2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 4px;
+  height: 0;
+  background: #87F0BA;
+  transition: all 0.3s ease-in;
+}
+body .eight-pic-group .skill .skill2-li .skill-loop-3 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  background: #87F0BA;
+  transition: all 0.3s ease-in;
+}
+body .eight-pic-group .skill .skill2-li .skill-loop-4 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  height: 0;
+  background: #87F0BA;
+  transition: all 0.3s ease-in;
 }
 body .eight-pic-group .skill .skill2-li p {
   color: #fff;
@@ -301,6 +385,7 @@ body .eight-pic-group .skill .skill2-li:hover p {
 }
 body .eight-pic-group .skill .skill2-li:hover h1 {
   opacity: 1;
+  color: #F2AEB9;
   margin-top: 8px;
 }
 body .eight-pic-group .skill .skill2-li:nth-child(1) {
@@ -320,6 +405,13 @@ body .eight-pic-group .skill .skill2-li:nth-child(5) {
 }
 body .eight-pic-group .skill .skill2-li:nth-child(6) {
   background: #353DD4;
+}
+body .eight-pic-group .skill .skill2-pic {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  background: url(../img/self-pic2.jpg);
+  background-size: cover;
 }
 body .six-li-group .six-ul {
   opacity: 0;
@@ -395,6 +487,12 @@ body .iphone-group .iphone-pic-out {
   opacity: 0;
   transition: all 0.6s linear;
 }
+body .iphone-group .iphone-pic-out .iphone-clude-pic {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
 body .iphone-group .iphone-pic-out img {
   width: 100%;
 }
@@ -457,19 +555,58 @@ body .four-pic-group .four-pic-ul.scrollTo {
   opacity: 1;
   margin-left: 0;
 }
+body .four-pic-group .four-pic-ul .four-pic-li:nth-child(1) .four-pic-cover,
+body .four-pic-group .four-pic-ul .four-pic-li:nth-child(2) .four-pic-cover,
+body .four-pic-group .four-pic-ul .four-pic-li:nth-child(3) .four-pic-cover,
+body .four-pic-group .four-pic-ul .four-pic-li:nth-child(4) .four-pic-cover {
+  background: yellow;
+}
 body .four-pic-group .four-pic-ul .four-pic-li .four-pic-out {
   position: relative;
 }
-body .four-pic-group .four-pic-ul .four-pic-li .four-pic-out img {
-  min-height: 195px;
+body .four-pic-group .four-pic-ul .four-pic-li .four-pic-out:hover .four-pic-cover1 {
+  width: 100%;
 }
-body .four-pic-group .four-pic-ul .four-pic-li .four-pic-out .four-pic-cover {
+body .four-pic-group .four-pic-ul .four-pic-li .four-pic-out:hover .four-pic-cover2 {
+  height: 100%;
+}
+body .four-pic-group .four-pic-ul .four-pic-li .four-pic-out:hover .four-pic-cover3 {
+  width: 100%;
+}
+body .four-pic-group .four-pic-ul .four-pic-li .four-pic-out:hover .four-pic-cover4 {
+  height: 100%;
+}
+body .four-pic-group .four-pic-ul .four-pic-li .four-pic-out .four-pic-cover1 {
   position: absolute;
   left: 0;
   top: 0;
+  width: 0;
+  height: 4px;
+  transition: all 0.2s linear;
+}
+body .four-pic-group .four-pic-ul .four-pic-li .four-pic-out .four-pic-cover2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 4px;
+  height: 0;
+  transition: all 0.2s linear 0.2s;
+}
+body .four-pic-group .four-pic-ul .four-pic-li .four-pic-out .four-pic-cover3 {
+  position: absolute;
   right: 0;
   bottom: 0;
-  transition: all 0.2s linear;
+  width: 0;
+  height: 4px;
+  transition: all 0.2s linear 0.4s ;
+}
+body .four-pic-group .four-pic-ul .four-pic-li .four-pic-out .four-pic-cover4 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  height: 0;
+  transition: all 0.2s linear 0.6s;
 }
 body .four-pic-group .four-pic-ul .four-pic-li:hover .four-pic-cover {
   background: rgba(76, 208, 198, 0.8);
@@ -643,6 +780,37 @@ body .footer-carousel {
   background: #fff;
   border: 1px solid #ccc;
 }
+.fixed {
+  position: fixed;
+  right: 100px;
+  bottom: 10%;
+  z-index: 111111;
+  opacity: 0;
+  transition: all 1s linear;
+}
+.fixed.scrollTo {
+  opacity: 1;
+}
+.fixed h1 {
+  font-size: 3em;
+  font-weight: 800;
+  color: red;
+  animation: rotate-self 2s infinite;
+}
+.fixed h1 a {
+  color: red;
+}
+.fixed h1 a:hover {
+  color: red;
+}
+.fixed h1 a:link,
+.fixed h1 a:visited,
+.fixed h1 a:active {
+  text-decoration: none;
+}
+.fixed h1:hover {
+  animation: bounch 2s infinite;
+}
 @keyframes bounch {
   0% {
     transform: scale(1);
@@ -655,11 +823,20 @@ body .footer-carousel {
   }
 }
 @keyframes rotate-self {
+  0% {
+    transform: rotate(10deg);
+  }
   33% {
-    transform: rotate(20deg);
+    transform: scale(1.2) rotate(-20deg);
+  }
+  50% {
+    transform: scale(1.4) rotate(30deg);
   }
   66% {
-    transform: rotate(-20deg);
+    transform: scale(1.2) rotate(-20deg);
+  }
+  100% {
+    transform: scale(1) rotate(10deg);
   }
 }
 @keyframes rotate-kuai {

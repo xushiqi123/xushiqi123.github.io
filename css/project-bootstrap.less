@@ -49,6 +49,8 @@ html {
 @nav-input: lighten(@nav-bg,38%);
 @nav-txt: #fff;
 @good-at:#4A6BCC;
+@skill-border-color1: #B7F281;
+@skill-border-color2: #87F0BA;
 body {
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
     .navbar-default {
@@ -308,7 +310,6 @@ body {
             position: absolute;
             top:0;
             height:100%;
-            //height:100%;
             background: url(../img/self-pic1.jpg) ;
             background-size: cover;
           }
@@ -318,17 +319,55 @@ body {
               background: url(../img/jineng.png);
             }
           }
-          .skill2-pic{
-            position: absolute;
-            height:100%;
-            top:0;
-            background: url(../img/self-pic2.jpg);
-            background-size: cover;
-          }
 
           .skill1-li{
               text-align: center;
               height:200px;
+              position: relative;
+              &:hover{
+                .skill-loop-1,.skill-loop-3{
+                  width:100%;
+                }
+                .skill-loop-2,.skill-loop-4{
+                  height:100%;
+                }
+              }
+              .skill-loop-1{
+                position: absolute;
+                left:0;
+                top:0;
+                width:0;
+                height:4px;
+                background: @skill-border-color1;
+                transition: all 0.3s ease-in;
+              }
+            .skill-loop-2{
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: 4px;;
+              height: 0;
+              background: @skill-border-color1;
+              transition: all 0.3s ease-in;
+            }
+            .skill-loop-3{
+              position: absolute;
+              right:0;
+              bottom:0;
+              width:0;
+              height:4px;
+              background: @skill-border-color1;
+              transition: all 0.3s ease-in;
+            }
+            .skill-loop-4{
+              position: absolute;
+              left:0;
+              bottom:0;
+              width: 4px;
+              height: 0;
+              background: @skill-border-color1;
+              transition: all 0.3s ease-in;
+            }
               p{
                 color:#fff;
                 font-size: 2em;
@@ -343,11 +382,11 @@ body {
               &:hover{
                 p{
                   margin-top:2em;
-                  color: #0ff;
+                  color: #fff;
                 }
                 h1{
                   opacity:1;
-
+                  color:#B7F281;
                   margin-top:8px;
                 }
               }
@@ -362,6 +401,51 @@ body {
           .skill2-li{
             text-align: center;
             height:200px;
+            position: relative;
+            &:hover{
+              .skill-loop-1,.skill-loop-3{
+                width:100%;
+              }
+              .skill-loop-2,.skill-loop-4{
+                height:100%;
+              }
+            }
+            .skill-loop-1{
+              position: absolute;
+              left:0;
+              top:0;
+              width:0;
+              height:4px;
+              background: @skill-border-color2;
+              transition: all 0.3s ease-in;
+            }
+            .skill-loop-2{
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: 4px;;
+              height: 0;
+              background: @skill-border-color2;
+              transition: all 0.3s ease-in;
+            }
+            .skill-loop-3{
+              position: absolute;
+              right:0;
+              bottom:0;
+              width:0;
+              height:4px;
+              background: @skill-border-color2;
+              transition: all 0.3s ease-in;
+            }
+            .skill-loop-4{
+              position: absolute;
+              left:0;
+              bottom:0;
+              width: 4px;
+              height: 0;
+              background: @skill-border-color2;
+              transition: all 0.3s ease-in;
+            }
             p{
               color:#fff;
               font-size: 2em;
@@ -380,7 +464,7 @@ body {
               }
               h1{
                 opacity:1;
-
+                color:#F2AEB9;
                 margin-top:8px;
               }
             }
@@ -391,181 +475,17 @@ body {
             &:nth-child(5){background: #3F53D0}
             &:nth-child(6){background: #353DD4}
           }
+          .skill2-pic{
+            position: absolute;
+            height:100%;
+            top:0;
+            background: url(../img/self-pic2.jpg);
+            background-size: cover;
+          }
         }
     }
 
 
-
-  //.eight-pic-group {
-  //  .same-txt {
-  //    opacity: 0;
-  //    transition: all 2.4s linear;
-  //    &.scrollTo {
-  //      opacity: 1;
-  //    }
-  //  }
-  //  //.row {
-  //  //    margin: 0;
-  //  //}
-  //  //background-color: #F8F8F8;
-  //  //.eight-pic-group-title {
-  //  //    margin-bottom: 10px;
-  //  //    opacity: 0;
-  //  //    transition: all 2.4s linear;
-  //  //    &.scrollTo {
-  //  //        opacity: 1;
-  //  //    }
-  //  //    li {
-  //  //        text-align: center;
-  //  //    }
-  //  //}
-  //  //.eight-pic {
-  //  //    //
-  //  //    //display:none;
-  //  //    ////position:absolute;
-  //  //    ////z-index: 99;
-  //  //    //opacity:0;
-  //  //    //margin-left:1500px;
-  //  //    //transition: all 0.2s linear;
-  //  //    //&:after {
-  //  //    //  content: '';
-  //  //    //  display: block;
-  //  //    //  clear: both;
-  //  //    //}
-  //  //    //
-  //  //    //&.active{
-  //  //    //top:100px;
-  //  //    //position: absolute;
-  //  //    //z-index: 999;
-  //  //    //
-  //  //    margin-left: -5px;
-  //  //    //display:block;
-  //  //    //
-  //  //    margin-top: 100px;
-  //  //    opacity: 0;
-  //  //    transition: all 0.4s linear;
-  //  //    &.scrollTo {
-  //  //        margin-top: 0;
-  //  //        opacity: 1;
-  //  //    }
-  //  //    //&:after {
-  //  //    //  content: '';
-  //  //    //  display: block;
-  //  //    //  clear: both;
-  //  //    //}
-  //  //    li {
-  //  //        padding: 3px;
-  //  //        position: relative;
-  //  //        overflow: hidden;
-  //  //        .eight-pic-cover {
-  //  //            position: absolute;
-  //  //            left: 0;
-  //  //            top: 0;
-  //  //            right: 0;
-  //  //            bottom: 0;
-  //  //            transition: all 0.2s linear;
-  //  //            cursor: pointer;
-  //  //            padding: 50% 0 0 10%;
-  //  //            .eight-pic-txt {
-  //  //                h1 {
-  //  //                    color: #fff;
-  //  //                    font-size: 1.4em;
-  //  //                }
-  //  //                p {
-  //  //                    color: #A3E6E2;
-  //  //                }
-  //  //            }
-  //  //        }
-  //  //        img {
-  //  //            width: 100%;
-  //  //            transition: transform 200ms ease-out;
-  //  //        }
-  //  //        &:hover {
-  //  //            .eight-pic-cover {
-  //  //                background-color: rgba(76, 208, 198, 0.8);
-  //  //            }
-  //  //            img {
-  //  //                transform: scale(1.1);
-  //  //            }
-  //  //        }
-  //  //    }
-  //  //    //}
-  //  //}
-  //
-  //  .skill{
-  //    background: url(../img/bg-transparent.jpg) no-repeat;
-  //    background-size: cover;
-  //    background-position: bottom;
-  //    min-height:500px;
-  //    &:after{
-  //      content: '';
-  //      display: block;
-  //      clear: both;
-  //    }
-  //    &.scrollTo{
-  //      .skill-pic-one{
-  //        height:500px;
-  //      }
-  //      .skill-txt{
-  //        h1{
-  //          opacity:1;
-  //          margin: 40px 0 0 20px;
-  //          color: rgba(0,0,0,0.5);
-  //        }
-  //        img{
-  //          &.html5{top:120px;left:20px;}
-  //          &.css3{top:160px;left:280px;transform: rotate(420deg);}
-  //          &.jquery{top:180px;left:520px;animation: rotate-self 4s infinite;}
-  //          &.github{top:120px;left:620px;}
-  //          &.less{top:320px;left:480px;}
-  //          &.ajax{top:260px;left:240px;}
-  //          &.bootstrap{top:400px;left:80px;animation: bounch 4s infinite;}
-  //
-  //          &.node{top:160px;left:80px;transform: rotate(360deg);}
-  //          &.php{top:360px;left:280px;transform: rotate(360deg);}
-  //          &.sql{top:260px;left:180px;animation: rotate-kuai 4s infinite;}
-  //          &.vue{top:280px;left:480px;animation: bounch 4s infinite;}
-  //          &.canvas{top:160px;left:480px;transform: rotate(360deg);}
-  //        }
-  //      }
-  //    }
-  //    .skill-pic-one{
-  //      width:150px;
-  //      height:200px;
-  //      margin-left:100px;
-  //      transition: all 1s ease-in;
-  //      background: url(../img/one-three_01.png) no-repeat;
-  //    }
-  //    .skill-txt{
-  //      //background: url(../img/shulianzhangwo.png) no-repeat;
-  //      overflow: hidden;
-  //      width:66%;
-  //      min-height:500px;
-  //      position: relative;
-  //      h1{
-  //        opacity:0;
-  //        margin-top:-20px;
-  //        font-size: 80px;
-  //        transition: all 2s ease-in;
-  //      }
-  //      img{
-  //        position: absolute;
-  //        transition: all 2s ease-in;
-  //        top:500px;
-  //        left:100px;
-  //      }
-  //    }
-  //    &.skill1{
-  //      background: none;
-  //      margin-bottom: 4em;
-  //    }
-  //    &.skill2{
-  //      .skill-pic-one{
-  //        background-position: -180px 0;
-  //      }
-  //    }
-  //  }
-  //}
     .six-li-group {
         .six-ul {
             opacity: 0;
@@ -639,6 +559,12 @@ body {
             }
         }
         .iphone-pic-out {
+          .iphone-clude-pic{
+            width:80%;
+            max-width:1000px;
+            margin:0 auto;
+            position: relative;
+          }
             img{
               width:100%;
             }
@@ -685,9 +611,7 @@ body {
               }
             }
           }
-
         }
-
     }
     .four-pic-group {
         .same-txt {
@@ -708,19 +632,60 @@ body {
                 margin-left: 0;
             }
             .four-pic-li {
+              &:nth-child(1),&:nth-child(2),&:nth-child(3),&:nth-child(4){
+                .four-pic-cover{
+                  background: yellow;
+                }
+              }
                 .four-pic-out {
                     position: relative;
-                    img {
-                        min-height: 195px;
+                    &:hover{
+                      .four-pic-cover1{
+                        width:100%;
+                      }
+                      .four-pic-cover2{
+                        height:100%;
+                      }
+                      .four-pic-cover3{
+                        width:100%;
+                      }
+                      .four-pic-cover4{
+                        height:100%;
+                      }
                     }
-                    .four-pic-cover {
+                    img {
+                    }
+                    .four-pic-cover1 {
                         position: absolute;
                         left: 0;
                         top: 0;
-                        right: 0;
-                        bottom: 0;
-                        //display: none;
+                        width:0;
+                        height:4px;
                         transition: all 0.2s linear;
+                    }
+                    .four-pic-cover2 {
+                      position: absolute;
+                      right: 0;
+                      top: 0;
+                      width:4px;
+                      height:0;
+                      transition: all 0.2s linear 0.2s;
+                    }
+                    .four-pic-cover3 {
+                      position: absolute;
+                      right: 0;
+                      bottom: 0;
+                      width:0;
+                      height:4px;
+                      transition: all 0.2s linear 0.4s ;
+                    }
+                    .four-pic-cover4 {
+                      position: absolute;
+                      left: 0;
+                      bottom: 0;
+                      width:4px;
+                      height:0;
+                      transition: all 0.2s linear 0.6s;
                     }
                 }
                 &:hover {
@@ -749,11 +714,6 @@ body {
         background-size: cover;
         background-attachment: fixed;
         .second-bg-cover {
-            //position: absolute;
-            //top:0;
-            //right:0;
-            //bottom:0;
-            //left:0;
             width: 100%;
             height: 100%;
             background: rgba(76,208,198,0.6);
@@ -909,6 +869,35 @@ body {
         }
     }
 }
+.fixed{
+  position: fixed;
+  right: 100px;
+  bottom: 10%;
+  z-index: 111111;
+  opacity: 0;
+  transition: all 1s linear;
+  &.scrollTo{
+    opacity:1;
+  }
+  h1{
+    font-size:3em;
+    font-weight: 800;
+    color:red;
+    animation:rotate-self 2s infinite ;
+
+    a{
+      color:red;
+      &:hover{color:red;}
+      &:link,&:visited,&:active{
+        text-decoration: none;
+      }
+    }
+    &:hover{
+      animation: bounch 2s infinite;
+    }
+
+  }
+}
 
 @keyframes bounch {
   0% {transform: scale(1)}
@@ -916,8 +905,11 @@ body {
   100% {transform: scale(1)}
 }
 @keyframes rotate-self {
-  33%{transform: rotate(20deg)}
-  66%{transform: rotate(-20deg)}
+  0%{transform: rotate(10deg)}
+  33%{transform: scale(1.2) rotate(-20deg)}
+  50%{transform: scale(1.4) rotate(30deg)}
+  66%{transform: scale(1.2) rotate(-20deg)}
+  100%{transform: scale(1) rotate(10deg)}
 
 }
 @keyframes rotate-kuai{
