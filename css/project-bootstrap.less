@@ -49,7 +49,7 @@ html {
 @nav-input: lighten(@nav-bg,38%);
 @nav-txt: #fff;
 @good-at:#4A6BCC;
-@skill-border-color1: #B7F281;
+@skill-border-color1: #fff;
 @skill-border-color2: #87F0BA;
 body {
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
@@ -386,18 +386,47 @@ body {
                 }
                 h1{
                   opacity:1;
-                  color:#B7F281;
+                  color:#FFAF4D;
                   margin-top:8px;
                 }
               }
-              &:nth-child(1){background: #F2AEB9;}
-              &:nth-child(2){background: darken(#F2AEB9,8%)}
-              &:nth-child(3){background: darken(#F2AEB9,15%)}
-              &:nth-child(4){background: lighten(#E25661,15%)}
-              &:nth-child(5){background: lighten(#E25661,8%)}
-              &:nth-child(6){background: #E25661}
+              &:nth-child(4){background: #87F0BA;}
+              &:nth-child(5){background: darken(#87F0BA,8%)}  //#F2AEB9;darken(#F2AEB9,8%);darken(#F2AEB9,15%);#E25661
+              &:nth-child(6){background: darken(#87F0BA,15%)}
+              &:nth-child(1){background: lighten(#87F0BA,10%)}
+              &:nth-child(2){background: lighten(#87F0BA,6%)}
+              &:nth-child(3){background: lighten(#87F0BA,2%)}
             }
 
+          &.skill2{
+            //position: relative;
+            transition: all 1.4s ease-in 1s;
+            margin-top:2em;
+            &.scrollTo{
+              margin-top:160px;
+              .kakaxi-hand{
+                top:-26px;
+                opacity: 1;
+                animation: kakaxi-hand-down 1s linear ;
+              }
+              .kakaxi{
+                top:-160px;
+              }
+            }
+            .kakaxi-hand{
+              position: absolute;
+              //top:-31px;
+              opacity: 0;
+              //transition: all 1s ease-in;
+              //z-index: -1;
+            }
+            .kakaxi{
+              position: absolute;
+              top:0px;
+              z-index: -1;
+              transition: all 1.4s ease-in 1s;
+            }
+          }
           .skill2-li{
             text-align: center;
             height:200px;
@@ -468,12 +497,12 @@ body {
                 margin-top:8px;
               }
             }
-            &:nth-child(1){background: lighten(#5A8DC7,10%);}
-            &:nth-child(2){background: #5A8DC7;}
-            &:nth-child(3){background: #517ACA}
-            &:nth-child(4){background: #4A6BCC}
-            &:nth-child(5){background: #3F53D0}
-            &:nth-child(6){background: #353DD4}
+            &:nth-child(1){background: lighten(#65A6C2,15%)}
+            &:nth-child(2){background: lighten(#65A6C2,8%)}
+            &:nth-child(3){background: lighten(#65A6C2,3%)}
+            &:nth-child(4){background: lighten(#5A8DC7,10%)}
+            &:nth-child(5){background: lighten(#5A8DC7,5%)}
+            &:nth-child(6){background: lighten(#5A8DC7,0%)}
           }
           .skill2-pic{
             position: absolute;
@@ -886,8 +915,8 @@ body {
     animation:rotate-self 2s infinite ;
 
     a{
-      color:red;
-      &:hover{color:red;}
+      color:#ccc;
+      &:hover{color:#999;}
       &:link,&:visited,&:active{
         text-decoration: none;
       }
@@ -917,4 +946,9 @@ body {
   40%{transform: rotate(0deg)}
   60%{transform: rotate(360deg)}
   100%{transform: rotate(0deg)}
+}
+@keyframes kakaxi-hand-down {
+  0% {top:0;z-index: -1}
+  50% {top:-31px;z-index:-1;opacity: 1;}
+  100% {top:-26px;z-index:999;}
 }

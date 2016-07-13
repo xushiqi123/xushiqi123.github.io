@@ -96,6 +96,7 @@ $(window).on('scroll', function() {
     scrollFunction('fixed', 400);
     scrollFunction('eight-pic-group .same-txt', 1100);
     scrollFunction('six-ul', 1760);
+    scrollFunction('skill2', 2000);
     scrollFunction('iphone-group .same-txt', 2600);
     scrollFunction('iphone-pic-out', 2700);
     scrollFunction('iphone-footer-txt', 2800);
