@@ -105,6 +105,9 @@ body .navbar-default .navbar-collapse .navbar-form button {
   background: #ffffff;
   border: none;
 }
+body .navbar-default.navbar-fixed-top {
+  z-index: 10000;
+}
 body .carousel-inner {
   width: 100%;
   height: 100%;
