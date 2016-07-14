@@ -59,6 +59,9 @@ html {
   height: 100%;
 }
 body {
+  overflow-x: hidden;
+}
+body {
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 }
 body .navbar-default {
@@ -112,6 +115,7 @@ body .carousel-inner {
   width: 100%;
   height: 100%;
   position: relative;
+  z-index: 1;
   background-color: #000;
 }
 body .carousel-inner .item {
@@ -141,7 +145,9 @@ body .carousel-inner .header-carousel-cover {
 }
 body .carousel-inner .header-carousel-cover .header-carousel-txt div {
   float: right;
-  margin-right: 10%;
+  margin-right: 26%;
+  margin-top: -140px;
+  color: #ffe;
 }
 body .carousel-inner .header-carousel-cover .header-carousel-txt div p {
   letter-spacing: 1px;

@@ -43,6 +43,9 @@ body,
 html {
     height: 100%;
 }
+body {
+    overflow-x: hidden;
+}
 @nav-bg: #A4CFF8;
 @nav-bg-active: @nav-bg;
 @nav-submit: darken(@nav-bg,-22%);
@@ -123,6 +126,7 @@ body {
       width:100%;
       height:100%;
       position: relative;
+      z-index:1;
       background-color: #000;
 
       .item {
@@ -153,7 +157,9 @@ body {
         .header-carousel-txt{
           div{
             float: right;
-            margin-right: 10%;
+            margin-right: 26%;
+            margin-top:-140px;
+            color:#ffe;
             p {
               letter-spacing: 1px;
               text-align: left;
