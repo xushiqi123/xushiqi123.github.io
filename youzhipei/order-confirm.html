@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="http://www.huaxur.com/static_chiyi/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="http://www.huaxur.com/static_chiyi/js/jquery.min.js"></script>
+		<script type="text/javascript" src="http://www.huaxur.com/static_chiyi/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="http://www.huaxur.com/static_chiyi/js/jquery.touchSlider.js" ></script>
+		<title>优直配</title>
+	</head>
+	<body>
+		<div class="page-order-confirm">
+			<!--header-->
+			<div class="top-header">
+				<p>确认订单</p>
+				<i>
+					<img src="images/左箭头.png" alt="" />
+				</i>
+			</div>
+				
+			<!--主体-->
+			<div class='main'>
+				<a href='javascript:;' class="personal-info font-black-bold-30 block">
+					<div class="personal">
+						<span class='name'>小王</span> 
+						<span class='gender'>先生</span> 
+						<span class='tele'>13741461257</span>
+					</div>
+					<div class="address">
+						杭州市高科技园2号楼
+					</div>
+					<div class="address-detail">
+						6层B0613
+					</div>
+				</a>
+				
+				<div class="divide-bold-30"></div>
+				
+				<a href='javascript:;' class="delivery-time font-black-bold-30">
+					<span class="time">次日13:43</span>
+					送达时间
+				</a>
+				
+				<div class="divide-bold-30"></div>
+				
+				<div class="order-detail-content font-gray-thin-30 clearfix">
+					35° 五粮春
+					<span class="order-detail-singel-amount  pull-right">
+						<img src="images/人民币（灰）.png" alt="" />
+						198
+					</span>
+					<span class="order-detail-singel-count pull-right">X1</span>
+				</div>
+				
+				<div class="divide-bold-30"></div>
+				
+				<div class="order-mark font-black-bold-30 clearfix">
+					<div>订单备注</div>
+					<textarea name=""  class='order-mark-txt'>明天上午早点送过来，最好11点前</textarea>
+				</div>
+			</div>
+			
+			<div class="footer">	
+				<a href="" class='block '>
+					<div class="footer-car pull-left">
+						总计
+					</div>
+					<div class="how-mouch pull-left">
+						<img src="images/人民币（白）.png" alt="" /> <span>198</span>
+					</div>
+					<div class="cleaning pull-right">确认下单</div>
+				</a>
+			</div>
+			
+		</div>
+		<script src="js/XSQ-youzhipei.js"></script>
+		<script>
+			$('.page-store-specific .main .plus-minus .minus').click(function(){
+				var inn = parseInt( $(this).parent().children('span').html() );
+				if(inn>1){
+					inn--;
+					$(this).parent().children('span').html(inn);
+				}else if(inn==1){
+					inn--;
+					$(this).css('display','none');
+					$(this).parent().children('span').html(inn).css('display','none');
+				}
+			})
+			$('.page-store-specific .main .plus-minus .plus').click(function(){
+				var inn = parseInt( $(this).parent().children('span').html() );
+				if(inn==0){
+					$(this).parent().children('.minus').css('display','inline-block');
+					$(this).parent().children('span').css('display','inline-block');					
+				}
+				inn++;
+				$(this).parent().children('span').html(inn);
+			})
+			
+
+//			滚动监听
+//			$(function(){
+//			    $(window).scroll(function(){
+//			      $("a[name='type2']").each(function(i) {
+//			          var win_h = $(window).height();
+//			          var win_t = $(window).scrollTop();
+//			          var span_t = $(this).offset().top;
+//			          if( win_h/2 + win_t >= span_t )
+//			          console.log(22);
+//			      });    
+//			    })
+//			})
+		</script>
+	</body>
+</html>

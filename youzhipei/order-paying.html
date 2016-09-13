@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="http://www.huaxur.com/static_chiyi/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="http://www.huaxur.com/static_chiyi/js/jquery.min.js"></script>
+		<script type="text/javascript" src="http://www.huaxur.com/static_chiyi/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="http://www.huaxur.com/static_chiyi/js/jquery.touchSlider.js" ></script>
+		<title>优直配</title>
+	</head>
+	<body>
+		<div class="page-order-paying">
+			<!--header-->
+			<div class="top-header">
+				<p>订单支付</p>
+				<i>
+					<img src="images/左箭头.png" alt="" />
+				</i>
+			</div>
+			<!--主体-->
+			<div class="main">
+				<div class="main-top-time">
+					支付剩余时间：<span id='time-invert-15'>15分00秒</span>
+				</div>
+				<div class="main-top">
+					<div class="order-name font-black-bold-30 border-b-gray">
+						订单名称
+						<span class='order-name-content font-gray-thin-30 pull-right'>
+							五粮液配送订单
+						</span>
+					</div>
+					<div class="order-situation font-black-bold-30 border-b-gray">
+						<div class='pull-left'>订单详情</div>
+						<p class='custom-name font-gray-thin-30'>
+							小王
+							<span class='custom-gender font-gray-thin-30'>先生</span>
+						</p>
+						<p class="custom-telephone font-gray-thin-30">13715893254</p>
+						<p class="custom-address font-gray-thin-30">杭州市高科技孵化园2号楼B0613</p>
+					</div>
+					<div class="order-detail font-gray-thin-30 border-b-gray clearfix">
+						<p class="order-detail-content font-gray-thin-30 clearfix">
+							35° 五粮春
+							<span class="order-detail-singel-amount  pull-right">198</span>
+							<span class="order-detail-singel-count pull-right">X1</span>
+						</p>
+					</div>
+					<div class="order-amount font-black-bold-30">
+						支付金额
+						<span class='pull-right'>198</span>
+					</div>
+				</div>
+				
+				<div class="divide-bold-30"></div>
+				
+				<div class="main-bottom">
+					<div class="font-black-bold-30 border-b-gray">
+							支付方式
+					</div>
+					<div class="pay-way-specific  active">
+						<img src="images/支付宝.png" alt="" />
+						<span>支付宝</span>
+					</div>
+					<div class="pay-way-specific  ">
+						<img src="images/微信.png" alt="" />
+						<span>微信支付</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="footer">
+				<a href="">
+					确认支付
+				</a>
+			</div>
+		</div>
+		
+		<script src="js/XSQ-youzhipei.js"></script>
+		<script>
+			//		支付倒计时
+			function timeInvert(duration){
+				var spantxt=document.getElementById('time-invert-15');
+				var endDate = new Date().getTime() + Math.round( duration );
+				
+				var timer=setInterval(function(){
+					var n = Math.round( ( endDate - new Date().getTime() )/1000 );
+	
+					var s = Math.round( n%60 );
+					
+					var m = Math.floor( n/60 );
+					if(n<0){
+						clearInterval(timer);
+					}else if(n<60){
+						spantxt.innerHTML = s +'秒';
+					}else{
+						spantxt.innerHTML = m +'分' + s +'秒';
+					}
+				},1000);
+			}
+			timeInvert(900000);
+		
+			//			手机号星号显示
+			$('.page-order-paying .custom-telephone').html( 
+				$('.page-order-paying .custom-telephone').html().substring(0,3)+
+				'****'+ 
+				$('.page-order-paying .custom-telephone').html().substring(7)
+			);
+		</script>
+	</body>
+</html>

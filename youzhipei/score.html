@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="http://www.huaxur.com/static_chiyi/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="http://www.huaxur.com/static_chiyi/js/jquery.min.js"></script>
+		<script type="text/javascript" src="http://www.huaxur.com/static_chiyi/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="http://www.huaxur.com/static_chiyi/js/jquery.touchSlider.js" ></script>
+		<title>优直配</title>
+	</head>
+	<body>
+		<div class="page-score">
+			<!--header-->
+			<div class="top-header">
+				<p>p评分</p>
+				<i>
+					<img src="images/左箭头.png" alt="" />
+				</i>
+			</div>
+			<!--主体-->
+			<div class='main'>
+				<div class="score">
+					<div class='top-img'>
+						<img src="images/五粮液.jpg" alt="" />
+					</div>
+					<p class='font-black-bold-30'>五粮液</p>
+					<div class="bottom-img-star">
+						<img src="images/星星（橙）.png" alt="" />
+						<img src="images/星星（橙）.png" alt="" />
+						<img src="images/星星（橙）.png" alt="" />
+						<img src="images/星星（橙）.png" alt="" />
+						<img src="images/星星（灰）.png" alt="" />
+					</div>
+				</div>
+				
+				<div class="info-detail font-black-bold-30">
+					<div class=" pull-left">
+						订单详情
+					</div>
+					<p class='custom-name font-gray-thin-30'>
+						小王
+						<span class='custom-gender font-gray-thin-30'>先生</span>
+					</p>
+					<p class="custom-telephone font-gray-thin-30">13715893254</p>
+					<p class="custom-address font-gray-thin-30">杭州市高科技孵化园2号楼B0613</p>
+				</div>
+				
+				<div class="order-detail font-black-bold-30">
+					<p class="order-detail-content font-gray-thin-30 clearfix">
+						35° 五粮春
+						<span class="order-detail-singel-amount font-gray-thin-30 pull-right">198</span>
+						<span class="order-detail-singel-count font-gray-thin-30 pull-right">X1</span>
+					</p>
+					<p class="order-detail-content clearfix">
+						<span class="order-detail-all-amount font-gray-thin-30 pull-right">198</span>
+						<span class='font-gray-thin-30 pull-right'>总计</span>
+					</p>
+				</div>
+			</div>
+			
+			<div class="footer">
+				<a href="">完成</a>
+			</div>
+			
+		</div>
+		<script src="js/XSQ-youzhipei.js"></script>
+		<script>
+//				手机号星号显示
+			$('.page-score .custom-telephone').html( 
+				$('.page-score .custom-telephone').html().substring(0,3)+
+				'****'+ 
+				$('.page-score .custom-telephone').html().substring(7)
+			);
+		</script>
+	</body>
+</html>

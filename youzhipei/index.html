@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="http://www.huaxur.com/static_chiyi/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="http://www.huaxur.com/static_chiyi/js/jquery.min.js"></script>
+		<script type="text/javascript" src="http://www.huaxur.com/static_chiyi/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="http://www.huaxur.com/static_chiyi/js/jquery.touchSlider.js" ></script>
+		<title>优直配</title>
+	</head>
+	<body>
+		<!--header-->
+		<div class='top-header'>
+			<p class='inline'>优直配<span>次日达</span>
+			</p>
+		</div>
+		
+		<div class='main clearfix'>
+			<!--首页-->
+			<div class="page page-index" >
+				<!--轮播-->
+				<div class="one" style="margin-top: -10px;">
+					<div class="main_visual">
+						<a href="javascript:;" id="btn_prev">
+								<img src="images/右箭头（灰）.png" alt="" / style='transform: rotate(180deg);'>
+							</a>
+							<a href="javascript:;" id="btn_next">
+								<img src="images/右箭头（灰）.png" alt="" />
+						</a>
+						<div class="flicking_con3 flicking_con">
+							<a href="#">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+						</div>
+						<div class="main_image" style="height: 180px;">
+							<ul>
+								<li><span class="dian1" onclick="left()"></span></li>
+								<li><span class="dian2"></span></li>
+								<li><span class="dian3"></span></li>
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+				<div class="ml15 mr15">
+					<ul class="category row ">
+						<li class="col-xs-3">
+							<a href="javascript:;" >
+								<img src="images/圆图标-酒类.png" class='width_80' alt="" />
+								<p>酒类</p>
+							</a>
+						</li>
+						<li class="col-xs-3">
+							<a href="javascript:;" >
+								<img src="images/圆图标-饮料.png" class='width_80' alt="" />
+								<p>饮料</p>
+							</a>
+						</li>
+						<li class="col-xs-3">
+							<a href="javascript:;">
+								<img src="images/圆图标-特产.png" class='width_80' alt="" />
+								<p>特产</p>
+							</a>
+						</li>
+						<li class="col-xs-3">
+							<a href="javascript:;" >
+								<img src="images/圆图标-厨房.png" class='width_80' alt="" />
+								<p>厨房用品</p>
+							</a>
+						</li>
+						<li class="col-xs-3">
+							<a href="javascript:;" >
+								<img src="images/圆图标-日常用品.png" class='width_80' alt="" />
+								<p>日常用品</p>
+							</a>
+						</li>
+						<li class="col-xs-3">
+							<a href="javascript:;" >
+								<img src="images/圆图标-零食.png" class='width_80' alt="" />
+								<p>零食</p>
+							</a>
+						</li>
+						<li class="col-xs-3">
+							<a href="javascript:;">
+								<img src="images/圆图标-茶叶.png" class='width_80' alt="" />
+								<p>茶叶</p>
+							</a>
+						</li>
+						<li class="col-xs-3">
+							<a href="javascript:;" >
+								<img src="images/圆图标-床上用品.png" class='width_80' alt="" />
+								<p>床上用品</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<!--分隔线-->
+				<div class="divide-bold"></div>
+				
+				<!--具体的-->
+				<div class='specific_all '>
+					<a href='javascript:;' class="block specific clearfix">
+						<div class="pull-left specific_img">
+							<img src="images/五粮液.jpg" alt="" />
+						</div>
+						<div class="pull-left specific_txt">
+							<h1 class='specific_txt_header'>五粮液</h1>
+							<div class='star_rank'>
+								<img src="images/星星（橙）.png" alt="" />
+								<img src="images/星星（橙）.png" alt="" />
+								<img src="images/星星（橙）.png" alt="" />
+								<img src="images/星星（橙）.png" alt="" />
+								<img src="images/星星（灰）.png" alt="" />
+								<span> 4分</span>
+							</div>
+							<p>
+								月售<span>1000</span>份
+							</p>
+						</div>
+					</a>
+					
+					<a href='javascript:;' class="block specific clearfix">
+						<div class="pull-left specific_img">
+							<img src="images/五粮液.jpg" alt="" />
+						</div>
+						<div class="pull-left specific_txt">
+							<h1 class='specific_txt_header'>五粮液 <span class='new_store'>新店</span></h1>
+							<div class='star_rank'>
+								<img src="images/星星（橙）.png" alt="" />
+								<img src="images/星星（橙）.png" alt="" />
+								<img src="images/星星（橙）.png" alt="" />
+								<img src="images/星星（橙）.png" alt="" />
+								<img src="images/星星（灰）.png" alt="" />
+								<span>4分</span>
+							</div>
+							<p>
+								月售<span>1000</span>份
+							</p>
+						</div>
+					</a>
+					
+					<a href='javascript:;' class="block specific clearfix">
+						<div class="pull-left specific_img">
+							<img src="images/五粮液.jpg" alt="" />
+						</div>
+						<div class="pull-left specific_txt">
+							<h1 class='specific_txt_header'>五粮液 <span class='brand'>品牌</span></h1>
+							<div class='star_rank'>
+								<img src="images/星星（橙）.png" alt="" />
+								<img src="images/星星（橙）.png" alt="" />
+								<img src="images/星星（橙）.png" alt="" />
+								<img src="images/星星（橙）.png" alt="" />
+								<img src="images/星星（灰）.png" alt="" />
+								<span>4分</span>
+							</div>
+							<p>
+								月售<span>1000</span>份
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			
+		</div>	
+		
+		
+		
+		<!--fix底-->
+		<div class='fix_bottom'>
+			<div class="footer row">
+				<div class='col-xs-3 active'>
+					<a href="javascript:;" data-target='.page-index' class='footer-a-index '></a>
+				</div>
+				<div class='col-xs-3'>
+					<a href="index2.html" data-target='.page-stores' class='footer-a-stores'></a>
+				</div>
+				<div class='col-xs-3'>
+					<a href="index3.html" data-target='.page-orders' class='footer-a-orders'></a>
+				</div>
+				<div class='col-xs-3'>
+					<a href="index4.html"  data-target='.page-mine' class='footer-a-mine'></a>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/XSQ-youzhipei.js"></script>
+	</body>
+</html>

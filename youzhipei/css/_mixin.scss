@@ -1,0 +1,41 @@
+$ui-width: 750;
+$rem-width: $ui-width / 10;
+
+@function pxToRem($px) {
+  @return $px / $rem-width * 1rem;
+}
+
+
+@mixin font-dpr($font-size){
+    $font-size:$font-size / 2 * 1px;
+    
+    font-size: $font-size;
+    
+    @media screen and (max-width: 319px){
+        font-size: $font-size * 0.7;
+    }
+    @media screen and (min-width: 320px) and (max-width: 374px){
+        font-size: $font-size * 0.8;
+    }
+    @media screen and (min-width: 375px) and (max-width: 413px){
+        font-size: $font-size * 0.9;
+    }
+    @media screen and (min-width: 414px) and (max-width: 434px){
+        font-size: $font-size * 1;
+    }
+    @media screen and (min-width: 435px) and (max-width: 499px){
+        font-size: $font-size * 1.1;
+    }
+    @media screen and (min-width: 500px){
+        font-size: $font-size * 1.4;
+    }
+  
+
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+}

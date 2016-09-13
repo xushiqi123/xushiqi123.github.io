@@ -1,0 +1,137 @@
+$gray: #E5E5E5;
+$green-light:#0ba;
+.page-commodity-specific{
+    height: 100%;
+    .top-header{
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40%;
+        i{
+            position: absolute;
+            left: pxToRem(25);
+            top: pxToRem(42);
+            bottom: initial;
+            >img{
+                width: pxToRem(30);
+            }
+        }
+    }
+    
+    .commodity-main{
+        height: 52%;
+        overflow-y: scroll;
+        .commodity-txt-top{
+            position: relative;
+            padding: pxToRem(20) pxToRem(40);
+            .txt-top-name{
+                @include font-dpr(40);
+                color: #000;
+                font-weight: bold;
+            }
+            .txt-top-amount{
+                color: #B5B5B5;
+                padding: pxToRem(10) 0;
+                @include font-dpr(26);
+            }
+            .txt-top-price{
+                color: #EC6941;
+                @include font-dpr(26);
+                span{
+                    padding-left:12px;
+                    background: url('../images/人民币（橙）.png') no-repeat left;
+                    background-size: pxToRem(18) pxToRem(24);
+                }
+            }
+            .pull-car{
+                position: absolute;
+                right: pxToRem(40);
+                bottom: pxToRem(20);
+                >img{
+                    width: pxToRem(162);
+                }
+            }
+            
+        }
+
+        
+        .commodity-txt-bottom{
+            padding: pxToRem(20) pxToRem(40);
+            .txt-bottom-header{
+                @include font-dpr(40);
+                color: #000;
+                font-weight: bold;
+                padding-bottom: pxToRem(10);
+            }
+            .txt-bottom-body{
+                color: #B5B5B5;
+                @include font-dpr(26);
+                .type{
+                    padding-bottom: pxToRem(20);
+                    .title:after{
+                        content: '：';
+                    }
+                    .content{}
+                }
+            }
+        }
+        
+    }
+    
+    .footer{
+        position: fixed;
+        left:0;
+        right:0;
+        bottom:0;
+        background: #959595;
+        height: 8%;
+        >a{
+            @include font-dpr(35);
+            font-weight: bold;
+            color: #fff;
+//          padding: pxToRem(30) 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            border-top: 1px solid $gray;  
+            .footer-car{
+                margin:0 pxToRem(80) 0 pxToRem(40);
+                position: relative;
+                img{
+                    width: pxToRem(60);
+                    height: pxToRem(50);
+                }
+                span{
+                    position: absolute;
+                    top:pxToRem(-5);
+                    right:pxToRem(-10);
+                    width: pxToRem(18);
+                    height: pxToRem(18);
+                    border-radius: 50%;
+                    background: red;
+                }
+            }
+            .how-mouch{
+                img{
+                    width: pxToRem(30);
+                    height: pxToRem(36);
+                }
+                span{
+                    font-weight: normal;
+                }
+            }
+            .cleaning{
+                position: absolute;
+                right:0;
+                background: $green-light;
+                height:100%;
+                width: pxToRem(280);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+ 

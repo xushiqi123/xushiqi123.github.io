@@ -1,0 +1,70 @@
+//$gray: #E5E5E5;
+//$green-light:#0ba;
+.page-score{
+    background: $gray;
+    height: 100%;
+    .main{
+        height: 82%;
+        background: #DCDCDC;
+        .score{
+            text-align: center;
+            border-bottom: 1px solid $gray;
+            background: #fff;
+            .top-img{
+                padding-top: pxToRem(50);
+                >img{
+                    width: pxToRem(140);
+                    height: pxToRem(140);
+                }
+            }
+            .font-black-bold-30{
+                @include font-dpr(38);
+                padding:pxToRem(22) 0 pxToRem(40);
+            }
+            .bottom-img-star>img{
+                width: pxToRem(80);
+                height: pxToRem(80);
+                margin-bottom: pxToRem(40);
+                margin-right: pxToRem(12);
+            }
+        }
+        .info-detail{
+            border-bottom: 1px solid $gray;
+            background: #fff;
+            p{
+                text-align: right;
+                padding-bottom:pxToRem(4);
+                &:last-child{
+                    padding-bottom:pxToRem(0);
+                }
+            }
+            .custom-telephone{font-weight: normal;}
+        }
+        .order-detail{
+            border-bottom: 1px solid $gray;
+            background: #fff;
+            .order-detail-singel-amount,.order-detail-all-amount{
+                text-align: right;
+                min-width: 2.4rem;
+                font-weight: normal;
+            }
+            .order-detail-singel-count{font-weight: normal;}
+        }
+    }
+    .footer{
+        position: fixed;
+        left:0;
+        right:0;
+        bottom:0;
+        background: #fff;
+        a{
+            @include font-dpr(35);
+            font-weight: bold;
+            color:$green-light;
+            padding: pxToRem(30) 0;
+            text-align: center;
+            display: block;
+            border-top: 1px solid $gray;
+        }
+    }
+} 

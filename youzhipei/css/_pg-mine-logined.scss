@@ -1,0 +1,91 @@
+.page-logined{
+    height: 100%;
+    .login-before{display: none;}
+    .login-before.active{
+        height: 82%;
+        display: block;
+        .page-mine{
+            text-align: center;
+            .none-login-img{
+                margin: pxToRem(284) 0 pxToRem(140);
+                >img{
+                    width:50%;
+                }
+            }
+            .btn-login{
+                color: #4BCFC3;
+                @include font-dpr(40);
+                font-weight: bold;
+                padding: pxToRem(16) pxToRem(90);
+//              letter-spacing: 3px;
+                border: 2px solid #4BCFC3;
+                border-radius: 10px;
+            }
+        }
+    }
+    .login-content-all{display: none;}
+    .login-content-all.active{
+        display: block;
+        height: 82%;
+        overflow-y: scroll;
+        background: #eee;
+        .logined-top{
+            background: #fff;
+            padding: pxToRem(20) pxToRem(30);
+            .logined-top-img>img{
+                width: pxToRem(130);
+                height: pxToRem(130);
+            }
+            .logined-top-txt{
+                margin-left: pxToRem(28);
+                .login-name{
+                    @include font-dpr(36);
+                    font-weight: bold;
+                    color: #000;
+                    margin: pxToRem(12) 0;
+                }
+                .login-tele{
+                    @include font-dpr(34);
+                    font-weight: normal;
+                    color: #B5B5B5;
+                }
+            }
+        }
+        .logined-middle,.logined-bottom{
+            background: #fff;
+            .wait-pay,.wait-accept,.delivering,.done,.address,.my-score,.my-voucher,.change-tele{
+                display: block;
+                padding: pxToRem(0) pxToRem(55);
+                border-bottom: 1px solid $gray;
+                .txt{
+                    padding-left: pxToRem(90);
+                    @include font-dpr(30);
+                    font-weight: bold;
+                    color: #000;
+//                  background: url('../images/线图标-待支付.png') ;
+                    background-position:  5px center;
+                    background-repeat: no-repeat;
+                    background-size: pxToRem( 50);
+                    height: pxToRem( 90);
+                    line-height: pxToRem( 90);
+                }
+                .img-right>img{
+                    width: pxToRem(30);
+                    height: pxToRem(50);
+                }
+            }
+            .wait-pay>.txt{background-position:  3px center;}
+            .wait-accept>.txt{background-size: pxToRem( 42);}
+            .delivering>.txt{background-size: pxToRem( 54);background-position:  1px center;}
+            .done>.txt{background-size: pxToRem( 40);}
+            .address>.txt{background-size: pxToRem( 30);background-position:  8px center;}
+            .my-score>.txt{background-size: pxToRem( 42);}
+            .my-voucher>.txt{background-size: pxToRem( 52);background-position:  0px center;}
+            .change-tele>.txt{background-size: pxToRem( 34);background-position:  7px center;}
+        }
+        .logined-bottom{
+            
+        }
+    }
+}
+
